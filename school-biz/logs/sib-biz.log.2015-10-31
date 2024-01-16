@@ -1,0 +1,45 @@
+10월 31 2015 16:42:25,898 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@78a7f540]
+10월 31 2015 16:42:25,908 DEBUG java.sql.Connection - ==>  Preparing: SELECT T1.* FROM ( SELECT S1.ARTICLE_ID , S1.TITLE , S1.CONTENTS , S1.VIEW_COUNT , S1.CREATOR_ID , S1.CREATED_DATE , S1.UPDATED_DATE , S2.LOGIN_ID , S2.NAME , ROW_NUMBER() OVER ( ORDER BY S1.CREATED_DATE DESC ) AS RNUM FROM WJ_ARTICLE S1 INNER JOIN WJ_MEMBER S2 ON S2.MEMBER_ID = S1.CREATOR_ID ) T1 WHERE T1.RNUM BETWEEN ? + 1 AND ? + ? 
+10월 31 2015 16:42:26,039 DEBUG java.sql.PreparedStatement - ==> Parameters: 0(Long), 0(Long), 10(Long)
+10월 31 2015 16:42:26,179 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@78a7f540]
+10월 31 2015 16:42:26,179 DEBUG java.sql.Connection - ==>  Preparing: SELECT COUNT(*) FROM WJ_ARTICLE T1 INNER JOIN WJ_MEMBER T2 ON T2.MEMBER_ID = T1.CREATOR_ID 
+10월 31 2015 16:42:26,179 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+10월 31 2015 16:44:41,962 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@5f5de23a]
+10월 31 2015 16:44:41,972 DEBUG java.sql.Connection - ==>  Preparing: SELECT T1.ARTICLE_ID , T1.TITLE , T1.CONTENTS , T1.VIEW_COUNT , T1.CREATOR_ID , T1.CREATED_DATE , T1.UPDATED_DATE , T2.LOGIN_ID , T2.NAME FROM WJ_ARTICLE T1 INNER JOIN WJ_MEMBER T2 ON T2.MEMBER_ID = T1.CREATOR_ID 
+10월 31 2015 16:44:42,093 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+10월 31 2015 17:35:21,051 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@140bd470]
+10월 31 2015 17:35:21,071 DEBUG java.sql.Connection - ==>  Preparing: SELECT T1.ARTICLE_ID , T1.TITLE , T1.CONTENTS , T1.VIEW_COUNT , T1.CREATOR_ID , T1.CREATED_DATE , T1.UPDATED_DATE , T2.LOGIN_ID , T2.NAME FROM WJ_ARTICLE T1 INNER JOIN WJ_MEMBER T2 ON T2.MEMBER_ID = T1.CREATOR_ID WHERE ARTICLE_ID = ? 
+10월 31 2015 17:35:21,192 DEBUG java.sql.PreparedStatement - ==> Parameters: 1(Long)
+10월 31 2015 17:54:08,262 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@526d542f]
+10월 31 2015 17:54:08,272 DEBUG java.sql.Connection - ==>  Preparing: SELECT T1.ARTICLE_ID , T1.TITLE , T1.CONTENTS , T1.VIEW_COUNT , T1.CREATOR_ID , T1.CREATED_DATE , T1.UPDATED_DATE , T2.LOGIN_ID , T2.NAME FROM WJ_ARTICLE T1 INNER JOIN WJ_MEMBER T2 ON T2.MEMBER_ID = T1.CREATOR_ID WHERE ARTICLE_ID IN ( ? , ? ) 
+10월 31 2015 17:54:08,396 DEBUG java.sql.PreparedStatement - ==> Parameters: 1(Long), 3(Long)
+10월 31 2015 18:00:48,797 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@d9f88de]
+10월 31 2015 18:00:48,807 DEBUG java.sql.Connection - ==>  Preparing: SELECT T1.ARTICLE_ID , T1.TITLE , T1.CONTENTS , T1.VIEW_COUNT , T1.CREATOR_ID , T1.CREATED_DATE , T1.UPDATED_DATE , T2.LOGIN_ID , T2.NAME FROM WJ_ARTICLE T1 INNER JOIN WJ_MEMBER T2 ON T2.MEMBER_ID = T1.CREATOR_ID WHERE ARTICLE_ID IN ( ? , ? ) 
+10월 31 2015 18:00:48,928 DEBUG java.sql.PreparedStatement - ==> Parameters: 1(Long), 3(Long)
+10월 31 2015 18:13:51,063 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@3ad41caa]
+10월 31 2015 18:13:51,075 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WJ_ARTICLE.NEXTVAL AS ID FROM DUAL 
+10월 31 2015 18:13:51,204 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+10월 31 2015 18:13:51,247 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@3ad41caa]
+10월 31 2015 18:13:51,247 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WJ_ARTICLE (ARTICLE_ID, TITLE, CONTENTS, VIEW_COUNT, CREATOR_ID, CREATED_DATE) VALUES (?, ?, ?, 0, ?, SYSDATE) 
+10월 31 2015 18:13:51,248 DEBUG java.sql.PreparedStatement - ==> Parameters: 101(Long), 제목입니다.(String), 내용입니다.(String), 1(Long)
+10월 31 2015 18:18:38,101 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@7447d144]
+10월 31 2015 18:18:38,111 DEBUG java.sql.Connection - ==>  Preparing: UPDATE WJ_ARTICLE SET TITLE = ? , CONTENTS = ? , UPDATED_DATE = SYSDATE WHERE ARTICLE_ID = ? AND CREATOR_ID = ? 
+10월 31 2015 18:18:38,225 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목 수정입니다.(String), 내용 수정입니다.(String), 1(Long), 1(Long)
+10월 31 2015 18:35:27,472 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@5d2d5f4f]
+10월 31 2015 18:35:27,484 DEBUG java.sql.Connection - ==>  Preparing: DELETE FROM WJ_ARTICLE WHERE ARTICLE_ID IN ( ? , ? ) AND CREATOR_ID = ? 
+10월 31 2015 18:35:27,611 DEBUG java.sql.PreparedStatement - ==> Parameters: 1(Long), 2(Long), 1(Long)
+10월 31 2015 18:42:36,851 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@2bf11e9f]
+10월 31 2015 18:42:36,865 DEBUG java.sql.Connection - ==>  Preparing: DELETE FROM WJ_ARTICLE WHERE ARTICLE_ID IN ( ? , ? ) AND CREATOR_ID = ? 
+10월 31 2015 18:42:36,996 DEBUG java.sql.PreparedStatement - ==> Parameters: 1(Long), 2(Long), 1(Long)
+10월 31 2015 18:54:19,260 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@6a9812a3]
+10월 31 2015 18:54:19,270 DEBUG java.sql.Connection - ==>  Preparing: UPDATE WJ_ARTICLE SET VIEW_COUNT = VIEW_COUNT + 1 WHERE ARTICLE_ID = ? 
+10월 31 2015 18:54:19,381 DEBUG java.sql.PreparedStatement - ==> Parameters: 1(Long)
+10월 31 2015 18:59:03,529 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@51a21699]
+10월 31 2015 18:59:03,539 DEBUG java.sql.Connection - ==>  Preparing: SELECT T1.* FROM ( SELECT S1.ARTICLE_ID , S1.TITLE , S1.CONTENTS , S1.VIEW_COUNT , S1.CREATOR_ID , S1.CREATED_DATE , S1.UPDATED_DATE , S2.LOGIN_ID , S2.NAME , ROW_NUMBER() OVER ( ORDER BY S1.CREATED_DATE DESC ) AS RNUM FROM WJ_ARTICLE S1 INNER JOIN WJ_MEMBER S2 ON S2.MEMBER_ID = S1.CREATOR_ID WHERE TITLE LIKE '%' || ? || '%' OR CONTENTS LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR LOGIN_ID LIKE ? || '%' ) T1 WHERE T1.RNUM BETWEEN ? + 1 AND ? + ? 
+10월 31 2015 18:59:03,671 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목(String), 제목(String), 제목(String), 제목(String), 0(Long), 0(Long), 10(Long)
+10월 31 2015 18:59:20,802 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@1158d371]
+10월 31 2015 18:59:20,812 DEBUG java.sql.Connection - ==>  Preparing: SELECT T1.ARTICLE_ID , T1.TITLE , T1.CONTENTS , T1.VIEW_COUNT , T1.CREATOR_ID , T1.CREATED_DATE , T1.UPDATED_DATE , T2.LOGIN_ID , T2.NAME FROM WJ_ARTICLE T1 INNER JOIN WJ_MEMBER T2 ON T2.MEMBER_ID = T1.CREATOR_ID WHERE TITLE LIKE '%' || ? || '%' OR CONTENTS LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR LOGIN_ID LIKE ? || '%' 
+10월 31 2015 18:59:20,923 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목(String), 제목(String), 제목(String), 제목(String)
+10월 31 2015 18:59:30,138 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@1a88f743]
+10월 31 2015 18:59:30,138 DEBUG java.sql.Connection - ==>  Preparing: SELECT T1.ARTICLE_ID , T1.TITLE , T1.CONTENTS , T1.VIEW_COUNT , T1.CREATOR_ID , T1.CREATED_DATE , T1.UPDATED_DATE , T2.LOGIN_ID , T2.NAME FROM WJ_ARTICLE T1 INNER JOIN WJ_MEMBER T2 ON T2.MEMBER_ID = T1.CREATOR_ID WHERE ARTICLE_ID IN ( ? , ? ) 
+10월 31 2015 18:59:30,259 DEBUG java.sql.PreparedStatement - ==> Parameters: 1(Long), 3(Long)

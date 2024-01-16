@@ -1,0 +1,21 @@
+11월 07 2015 19:20:47,444 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@32513f84]
+11월 07 2015 19:20:47,444 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WJ_ARTICLE.NEXTVAL AS ID FROM DUAL 
+11월 07 2015 19:20:47,570 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+11월 07 2015 19:20:47,601 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@32513f84]
+11월 07 2015 19:20:47,601 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WJ_ARTICLE (ARTICLE_ID, TITLE, CONTENTS, VIEW_COUNT, CREATOR_ID, CREATED_DATE) VALUES (?, ?, ?, 0, ?, SYSDATE) 
+11월 07 2015 19:20:47,601 DEBUG java.sql.PreparedStatement - ==> Parameters: 121(Long), 제목(String), 내용(String), 1(Long)
+11월 07 2015 19:21:15,432 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@4aecaaa2]
+11월 07 2015 19:21:15,448 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WJ_ARTICLE.NEXTVAL AS ID FROM DUAL 
+11월 07 2015 19:21:15,558 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+11월 07 2015 19:21:15,605 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@4aecaaa2]
+11월 07 2015 19:21:15,605 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WJ_ARTICLE (ARTICLE_ID, TITLE, CONTENTS, VIEW_COUNT, CREATOR_ID, CREATED_DATE) VALUES (?, ?, ?, 0, ?, SYSDATE) 
+11월 07 2015 19:21:15,605 DEBUG java.sql.PreparedStatement - ==> Parameters: 122(Long), 제목(String), 내용(String), 1(Long)
+11월 07 2015 19:25:50,276 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@3f0731e7]
+11월 07 2015 19:25:50,291 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WJ_ARTICLE.NEXTVAL AS ID FROM DUAL 
+11월 07 2015 19:25:50,386 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+11월 07 2015 19:25:50,433 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@3f0731e7]
+11월 07 2015 19:25:50,433 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WJ_ARTICLE (ARTICLE_ID, TITLE, CONTENTS, VIEW_COUNT, CREATOR_ID, CREATED_DATE) VALUES (?, ?, ?, 0, ?, SYSDATE) 
+11월 07 2015 19:25:50,433 DEBUG java.sql.PreparedStatement - ==> Parameters: 123(Long), 제목입니다.(String), 내용입니다.(String), 1(Long)
+11월 07 2015 19:26:08,966 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@3e6157a2]
+11월 07 2015 19:26:08,982 DEBUG java.sql.Connection - ==>  Preparing: UPDATE WJ_ARTICLE SET TITLE = ? , CONTENTS = ? , UPDATED_DATE = SYSDATE WHERE ARTICLE_ID = ? AND CREATOR_ID = ? 
+11월 07 2015 19:26:09,092 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목 수정입니다.(String), 내용 수정입니다.(String), 1(Long), 1(Long)

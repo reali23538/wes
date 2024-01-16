@@ -1,0 +1,25 @@
+10월 25 2015 15:39:04,737 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@33182c98]
+10월 25 2015 15:39:04,753 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WJ_ARTICLE.NEXTVAL AS ID FROM DUAL 
+10월 25 2015 15:39:04,879 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+10월 25 2015 15:39:04,926 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@33182c98]
+10월 25 2015 15:39:04,926 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WJ_ARTICLE (ARTICLE_ID, TITLE, CONTENTS, VIEW_COUNT, CREATOR_ID, CREATED_DATE) VALUES (?, ?, ?, 0, ?, SYSDATE) 
+10월 25 2015 15:39:04,926 DEBUG java.sql.PreparedStatement - ==> Parameters: 81(Long), 제목(String), 내용(String), 1(Long)
+10월 25 2015 16:07:55,581 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@5c1a81c]
+10월 25 2015 16:07:55,591 DEBUG java.sql.Connection - ==>  Preparing: UPDATE WJ_ARTICLE SET TITLE = ? , CONTENTS = ? , UPDATED_DATE = SYSDATE WHERE ARTICLE_ID = ? AND CREATOR_ID = ? 
+10월 25 2015 16:07:55,702 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목 수정(String), 내용 수정(String), 1(Long), 1(Long)
+10월 25 2015 16:08:29,877 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@6d03c937]
+10월 25 2015 16:08:29,887 DEBUG java.sql.Connection - ==>  Preparing: UPDATE WJ_ARTICLE SET TITLE = ? , CONTENTS = ? , UPDATED_DATE = SYSDATE WHERE ARTICLE_ID = ? AND CREATOR_ID = ? 
+10월 25 2015 16:08:30,008 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목 수정(String), 내용 수정(String), 1(Long), 2(Long)
+10월 25 2015 16:13:30,902 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@e09300c]
+10월 25 2015 16:13:30,912 DEBUG java.sql.Connection - ==>  Preparing: DELETE FROM WJ_ARTICLE WHERE ARTICLE_ID = ? AND CREATOR_ID = ? 
+10월 25 2015 16:13:31,023 DEBUG java.sql.PreparedStatement - ==> Parameters: 1(Long), 1(Long)
+10월 25 2015 16:52:56,526 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@6fb4576a]
+10월 25 2015 16:52:56,541 DEBUG java.sql.Connection - ==>  Preparing: DELETE FROM WJ_ARTICLE WHERE ARTICLE_ID IN ( ? , ? ) 
+10월 25 2015 16:53:35,949 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@4184b5b0]
+10월 25 2015 16:53:35,965 DEBUG java.sql.Connection - ==>  Preparing: DELETE FROM WJ_ARTICLE WHERE ARTICLE_ID IN ( ? , ? ) 
+10월 25 2015 16:59:54,423 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@40bb46a0]
+10월 25 2015 16:59:54,423 DEBUG java.sql.Connection - ==>  Preparing: DELETE FROM WJ_ARTICLE WHERE ARTICLE_ID IN ( ? , ? ) 
+10월 25 2015 16:59:54,517 DEBUG java.sql.PreparedStatement - ==> Parameters: 1(Long), 2(Long)
+10월 25 2015 17:03:52,122 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@3ad41caa]
+10월 25 2015 17:03:52,138 DEBUG java.sql.Connection - ==>  Preparing: UPDATE WJ_ARTICLE SET VIEW_COUNT = VIEW_COUNT + 1 WHERE ARTICLE_ID = ? 
+10월 25 2015 17:03:52,248 DEBUG java.sql.PreparedStatement - ==> Parameters: 1(Long)

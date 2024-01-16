@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>school</artifactId>
+		<groupId>info.wes</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	 
+	<artifactId>school-core</artifactId>
+	<name>school-core</name>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	 
+	<dependencies>
+	
+		<!-- excelFile import,export -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.9</version>
+		</dependency>
+	</dependencies>
+	
+</project>

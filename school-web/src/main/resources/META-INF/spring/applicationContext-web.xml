@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:mvc="http://www.springframework.org/schema/mvc"
+	   xmlns:p="http://www.springframework.org/schema/p"
+	   xmlns:task="http://www.springframework.org/schema/task"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+						http://www.springframework.org/schema/context
+						http://www.springframework.org/schema/context/spring-context-3.1.xsd
+						http://www.springframework.org/schema/mvc
+						http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+						http://www.springframework.org/schema/task 
+						http://www.springframework.org/schema/task/spring-task-3.1.xsd">
+
+	<!-- 프로퍼티 파일 분리 -->
+	<import resource="properties.xml"/>
+
+	<!-- component scan -->
+	<context:component-scan base-package="info.wes.school.web" />
+
+	<!-- resolver : 결과를 어떤 형태로 보여줄지 지정해줌, 예:/WEB-INF/views/board/board_list.jsp -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" p:prefix="/WEB-INF/views/" p:suffix=".jsp" />
+	<!-- 결과를 빈이름으로 찾음, 예:fileDownloadView -->
+	<bean id="beanNameViewResolver" class="org.springframework.web.servlet.view.BeanNameViewResolver" >
+		<property name="order"><value>0</value></property>
+	</bean>
+	<mvc:resources location="/" mapping="/static/**" />
+
+	<!-- annotation driven (url이 어떤 컨트롤러로 가야할지 자동으로 지정해주는 등의 어노테이션 컨트롤) -->
+	<mvc:annotation-driven />
+	<!-- static 파일들이 Dispatcher servlet 을 타지 않도록 함 -->
+	<mvc:default-servlet-handler />
+	
+	<!-- /로 요청이 들어왔을때 index.jsp 로 이동시킴 (단순한 페이지 이동시 사용) -->
+	<mvc:view-controller path="/" view-name="index" />
+	<mvc:view-controller path="/login" view-name="login" />
+	<mvc:view-controller path="/files" view-name="file/file_main" />
+	<mvc:view-controller path="/rest-template" view-name="rest/rest_main" />
+	<mvc:view-controller path="/etc" view-name="etc/etc_main" />
+	<mvc:view-controller path="/external" view-name="external/external_main" />
+
+	<!-- 인터셉터 -->
+	<mvc:interceptors>
+		<bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" p:paramName="lang" /> <!-- lang이라는 파라미터로 접근시 인터셉트 -->
+	</mvc:interceptors>
+	
+	<!-- 스케줄러 -->
+	<task:scheduler id="jobScheduler" pool-size="10" />
+	<task:annotation-driven scheduler="jobScheduler" />
+	
+	<!-- 페이징 -->
+	<bean id="paging" class="info.wes.school.core.paging.basic.impl.DefaultPaging">
+<!-- 		<property name="contextPath" value="${conf.paging.contextpath}" /> -->
+		<property name="rowScale" value="${conf.paging.rowscale}" />
+	</bean>
+	
+	<!-- 파일업로드 -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxInMemorySize" value="10240" /> <!-- 디스크에 임시 파일을 생성하기 전에 메모리에 보관할수있는 최대 바이트 크기 --> 
+		<property name="maxUploadSize" value="10485760" /> <!-- 업로드 최대바이트 크기 설정 -->
+	</bean>
+	<!-- 파일업로더 -->
+	<bean id="fileUploader" class="info.wes.school.core.file.upload.impl.DefaultFileUploader">
+		<property name="rootDir" value="${file.upload.dir}" />
+	</bean>
+	<!-- 파일다운로드(뷰구현) -->
+	<bean id="fileDownloadViewImpl" class="info.wes.school.core.file.download.FileDownloadViewImpl" />
+	
+	<!-- i18n : message -->
+	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basename" value="WEB-INF/i18n/messages" />
+		<property name="fallbackToSystemLocale" value="false" />
+		<property name="cacheSeconds" value="60" />
+	</bean>
+	<!-- 다국어처리 -->
+	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver" p:cookieName="locale" p:cookieMaxAge="86400"/>
+	
+	<!-- responsebody json 리턴 -->
+	<bean id="jsonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter" />
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		<property name="messageConverters">
+			<list>
+				<ref bean="jsonHttpMessageConverter"/>
+			</list>
+		</property>
+	</bean>
+	
+</beans>

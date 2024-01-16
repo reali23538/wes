@@ -1,0 +1,229 @@
+1월 01 2016 17:16:56,351 ERROR org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6335e8a9] to prepare test instance [info.wes.school.biz.article.repository.ArticleRepositoryTest@683de221]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'articleServiceImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void info.wes.school.core.service.impl.DefaultService.remove(java.util.List); nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No matching bean of type [info.wes.school.biz.article.domain.Article] found for dependency [collection of info.wes.school.biz.article.domain.Article]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:287)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:469)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	... 24 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void info.wes.school.core.service.impl.DefaultService.remove(java.util.List); nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No matching bean of type [info.wes.school.biz.article.domain.Article] found for dependency [collection of info.wes.school.biz.article.domain.Article]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:284)
+	... 39 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No matching bean of type [info.wes.school.biz.article.domain.Article] found for dependency [collection of info.wes.school.biz.article.domain.Article]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:952)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:779)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:735)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:551)
+	... 41 more
+1월 01 2016 19:18:06,338 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@6e5b7129]
+1월 01 2016 19:18:06,338 DEBUG java.sql.Connection - ==>  Preparing: SELECT COUNT(*) FROM WES_ARTICLE T1 INNER JOIN WES_MEMBER T2 ON T2.MEMBER_ID = T1.CREATOR_ID WHERE TITLE LIKE '%' || ? || '%' OR CONTENTS LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR LOGIN_ID LIKE ? || '%' 
+1월 01 2016 19:18:06,449 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목(String), 제목(String), 제목(String), 제목(String)
+1월 01 2016 19:18:18,212 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@62cc149f]
+1월 01 2016 19:18:18,228 DEBUG java.sql.Connection - ==>  Preparing: SELECT T1.* FROM ( SELECT S1.ARTICLE_ID , S1.TITLE , S1.CONTENTS , S1.VIEW_COUNT , S1.CREATOR_ID , S1.CREATED_DATE , S1.UPDATED_DATE , S2.LOGIN_ID , S2.NAME , ROW_NUMBER() OVER ( ORDER BY S1.ARTICLE_ID DESC ) AS RNUM FROM WES_ARTICLE S1 INNER JOIN WES_MEMBER S2 ON S2.MEMBER_ID = S1.CREATOR_ID WHERE TITLE LIKE '%' || ? || '%' OR CONTENTS LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR LOGIN_ID LIKE ? || '%' ) T1 WHERE T1.RNUM BETWEEN ? + 1 AND ? + ? 
+1월 01 2016 19:18:18,338 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목(String), 제목(String), 제목(String), 제목(String), 0(Long), 0(Long), 10(Long)
+1월 01 2016 19:18:44,079 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@6c973c9]
+1월 01 2016 19:18:44,079 DEBUG java.sql.Connection - ==>  Preparing: SELECT T1.ARTICLE_ID , T1.TITLE , T1.CONTENTS , T1.VIEW_COUNT , T1.CREATOR_ID , T1.CREATED_DATE , T1.UPDATED_DATE , T2.LOGIN_ID , T2.NAME FROM WES_ARTICLE T1 INNER JOIN WES_MEMBER T2 ON T2.MEMBER_ID = T1.CREATOR_ID WHERE TITLE LIKE '%' || ? || '%' OR CONTENTS LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR LOGIN_ID LIKE ? || '%' 
+1월 01 2016 19:18:44,189 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목(String), 제목(String), 제목(String), 제목(String)
+1월 01 2016 19:19:20,818 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@4e27a127]
+1월 01 2016 19:19:20,828 DEBUG java.sql.Connection - ==>  Preparing: SELECT T1.ARTICLE_ID , T1.TITLE , T1.CONTENTS , T1.VIEW_COUNT , T1.CREATOR_ID , T1.CREATED_DATE , T1.UPDATED_DATE , T2.LOGIN_ID , T2.NAME FROM WES_ARTICLE T1 INNER JOIN WES_MEMBER T2 ON T2.MEMBER_ID = T1.CREATOR_ID WHERE ARTICLE_ID = ? 
+1월 01 2016 19:19:20,969 DEBUG java.sql.PreparedStatement - ==> Parameters: 1(Long)
+1월 01 2016 19:21:59,805 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@6dccad1e]
+1월 01 2016 19:21:59,815 DEBUG java.sql.Connection - ==>  Preparing: SELECT T1.ARTICLE_ID , T1.TITLE , T1.CONTENTS , T1.VIEW_COUNT , T1.CREATOR_ID , T1.CREATED_DATE , T1.UPDATED_DATE , T2.LOGIN_ID , T2.NAME FROM WES_ARTICLE T1 INNER JOIN WES_MEMBER T2 ON T2.MEMBER_ID = T1.CREATOR_ID WHERE ARTICLE_ID = ? 
+1월 01 2016 19:21:59,936 DEBUG java.sql.PreparedStatement - ==> Parameters: 3299(Long)
+1월 01 2016 19:22:11,593 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@4166432]
+1월 01 2016 19:22:11,603 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_ARTICLE (ARTICLE_ID, TITLE, CONTENTS, VIEW_COUNT, CREATOR_ID, CREATED_DATE) VALUES (SEQ_WES_ARTICLE.NEXTVAL, ?, ?, 0, ?, ?) 
+1월 01 2016 19:22:51,649 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@7fa38051]
+1월 01 2016 19:22:51,659 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_ARTICLE (ARTICLE_ID, TITLE, CONTENTS, VIEW_COUNT, CREATOR_ID, CREATED_DATE) VALUES (SEQ_WES_ARTICLE.NEXTVAL, ?, ?, 0, ?, ?) 
+1월 01 2016 19:22:51,770 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목(String), 내용(String), 1(Long), 2016-01-01 19:22:51.609(Timestamp)
+1월 01 2016 19:23:13,343 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@4e1d4ae9]
+1월 01 2016 19:23:13,353 DEBUG java.sql.Connection - ==>  Preparing: UPDATE WES_ARTICLE SET TITLE = ? , CONTENTS = ? , UPDATED_DATE = ? WHERE ARTICLE_ID = ? AND CREATOR_ID = ? 
+1월 01 2016 19:23:13,454 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목 수정(String), 내용 수정(String), 2016-01-01 19:23:13.303(Timestamp), 1(Long), 1(Long)
+1월 01 2016 19:23:35,929 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@473d874e]
+1월 01 2016 19:23:35,939 DEBUG java.sql.Connection - ==>  Preparing: UPDATE WES_ARTICLE SET TITLE = ? , CONTENTS = ? , UPDATED_DATE = ? WHERE ARTICLE_ID = ? AND CREATOR_ID = ? 
+1월 01 2016 19:23:36,030 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목 수정(String), 내용 수정(String), 2016-01-01 19:23:35.889(Timestamp), 3299(Long), 1(Long)
+1월 01 2016 19:26:08,272 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@cbe1b0d]
+1월 01 2016 19:26:08,282 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_ARTICLE (ARTICLE_ID, TITLE, CONTENTS, VIEW_COUNT, CREATOR_ID, CREATED_DATE) VALUES (SEQ_WES_ARTICLE.NEXTVAL, ?, ?, 0, ?, ?) 
+1월 01 2016 19:26:08,389 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목(String), 내용(String), 1(Long), 2016-01-01 19:26:08.222(Timestamp)
+1월 01 2016 19:26:35,830 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@cbe1b0d]
+1월 01 2016 19:26:35,830 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_ARTICLE (ARTICLE_ID, TITLE, CONTENTS, VIEW_COUNT, CREATOR_ID, CREATED_DATE) VALUES (SEQ_WES_ARTICLE.NEXTVAL, ?, ?, 0, ?, ?) 
+1월 01 2016 19:26:35,949 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목(String), 내용(String), 1(Long), 2016-01-01 19:26:35.78(Timestamp)
+1월 01 2016 19:27:29,654 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@3f82a8a5]
+1월 01 2016 19:27:29,664 DEBUG java.sql.Connection - ==>  Preparing: DELETE FROM WES_ARTICLE WHERE ARTICLE_ID IN ( ? , ? ) AND CREATOR_ID = ? 
+1월 01 2016 19:27:29,771 DEBUG java.sql.PreparedStatement - ==> Parameters: 3299(Long), 3300(Long), 1(Long)
+1월 01 2016 19:30:06,832 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@473d874e]
+1월 01 2016 19:30:06,842 DEBUG java.sql.Connection - ==>  Preparing: DELETE FROM WES_ARTICLE WHERE ARTICLE_ID = ? AND CREATOR_ID = ? 
+1월 01 2016 19:30:06,943 DEBUG java.sql.PreparedStatement - ==> Parameters: 3299(Long), 1(Long)
+1월 01 2016 19:30:36,197 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@7fa38051]
+1월 01 2016 19:30:36,207 DEBUG java.sql.Connection - ==>  Preparing: UPDATE WES_ARTICLE SET VIEW_COUNT = VIEW_COUNT + 1 WHERE ARTICLE_ID = ? 
+1월 01 2016 19:30:36,318 DEBUG java.sql.PreparedStatement - ==> Parameters: 3299(Long)
+1월 01 2016 19:32:34,049 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@445e0565]
+1월 01 2016 19:32:34,059 DEBUG java.sql.Connection - ==>  Preparing: SELECT T1.* FROM ( SELECT S1.ARTICLE_ID , S1.TITLE , S1.CONTENTS , S1.VIEW_COUNT , S1.CREATOR_ID , S1.CREATED_DATE , S1.UPDATED_DATE , S2.LOGIN_ID , S2.NAME , ROW_NUMBER() OVER ( ORDER BY S1.ARTICLE_ID DESC ) AS RNUM FROM WES_ARTICLE S1 INNER JOIN WES_MEMBER S2 ON S2.MEMBER_ID = S1.CREATOR_ID ) T1 WHERE T1.RNUM BETWEEN ? + 1 AND ? + ? 
+1월 01 2016 19:32:34,161 DEBUG java.sql.PreparedStatement - ==> Parameters: 0(Long), 0(Long), 10(Long)
+1월 01 2016 19:32:34,241 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@445e0565]
+1월 01 2016 19:32:34,241 DEBUG java.sql.Connection - ==>  Preparing: SELECT COUNT(*) FROM WES_ARTICLE T1 INNER JOIN WES_MEMBER T2 ON T2.MEMBER_ID = T1.CREATOR_ID 
+1월 01 2016 19:32:34,241 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+1월 01 2016 19:32:50,416 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@1a80d720]
+1월 01 2016 19:32:50,426 DEBUG java.sql.Connection - ==>  Preparing: SELECT T1.ARTICLE_ID , T1.TITLE , T1.CONTENTS , T1.VIEW_COUNT , T1.CREATOR_ID , T1.CREATED_DATE , T1.UPDATED_DATE , T2.LOGIN_ID , T2.NAME FROM WES_ARTICLE T1 INNER JOIN WES_MEMBER T2 ON T2.MEMBER_ID = T1.CREATOR_ID 
+1월 01 2016 19:32:50,522 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+1월 01 2016 19:33:49,988 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@3eb34e1a]
+1월 01 2016 19:33:49,988 DEBUG java.sql.Connection - ==>  Preparing: SELECT T1.ARTICLE_ID , T1.TITLE , T1.CONTENTS , T1.VIEW_COUNT , T1.CREATOR_ID , T1.CREATED_DATE , T1.UPDATED_DATE , T2.LOGIN_ID , T2.NAME FROM WES_ARTICLE T1 INNER JOIN WES_MEMBER T2 ON T2.MEMBER_ID = T1.CREATOR_ID WHERE ARTICLE_ID = ? 
+1월 01 2016 19:33:50,097 DEBUG java.sql.PreparedStatement - ==> Parameters: 3299(Long)
+1월 01 2016 19:35:29,792 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@52fd140b]
+1월 01 2016 19:35:29,802 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_ARTICLE (ARTICLE_ID, TITLE, CONTENTS, VIEW_COUNT, CREATOR_ID, CREATED_DATE) VALUES (SEQ_WES_ARTICLE.NEXTVAL, ?, ?, 0, ?, ?) 
+1월 01 2016 19:35:29,903 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목입니다.(String), 내용입니다.(String), 1(Long), 2016-01-01 19:35:29.742(Timestamp)
+1월 01 2016 19:35:44,936 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@5a0c10b6]
+1월 01 2016 19:35:44,946 DEBUG java.sql.Connection - ==>  Preparing: UPDATE WES_ARTICLE SET TITLE = ? , CONTENTS = ? , UPDATED_DATE = ? WHERE ARTICLE_ID = ? AND CREATOR_ID = ? 
+1월 01 2016 19:35:45,047 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목 수정입니다.(String), 내용 수정입니다.(String), 2016-01-01 19:35:44.896(Timestamp), 3299(Long), 1(Long)
+1월 01 2016 20:09:35,766 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@654f4f73]
+1월 01 2016 20:09:35,776 DEBUG java.sql.Connection - ==>  Preparing: DELETE FROM WES_ARTICLE WHERE ARTICLE_ID IN ( ? , ? ) AND CREATOR_ID = ? 
+1월 01 2016 20:09:35,878 DEBUG java.sql.PreparedStatement - ==> Parameters: 3299(Long), 3300(Long), 1(Long)
+1월 01 2016 20:10:19,183 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@4e1d4ae9]
+1월 01 2016 20:10:19,193 DEBUG java.sql.Connection - ==>  Preparing: UPDATE WES_ARTICLE SET VIEW_COUNT = VIEW_COUNT + 1 WHERE ARTICLE_ID = ? 
+1월 01 2016 20:10:19,297 DEBUG java.sql.PreparedStatement - ==> Parameters: 1(Long)
+1월 01 2016 20:10:33,748 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@4e1d4ae9]
+1월 01 2016 20:10:33,758 DEBUG java.sql.Connection - ==>  Preparing: UPDATE WES_ARTICLE SET VIEW_COUNT = VIEW_COUNT + 1 WHERE ARTICLE_ID = ? 
+1월 01 2016 20:10:33,858 DEBUG java.sql.PreparedStatement - ==> Parameters: 3299(Long)
+1월 01 2016 20:11:11,631 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@2224a128]
+1월 01 2016 20:11:11,641 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_ARTICLE (ARTICLE_ID, TITLE, CONTENTS, VIEW_COUNT, CREATOR_ID, CREATED_DATE) VALUES (SEQ_WES_ARTICLE.NEXTVAL, ?, ?, 0, ?, ?) 
+1월 01 2016 20:11:11,743 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목1(String), 내용1(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,753 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목2(String), 내용2(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,753 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목3(String), 내용3(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,753 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목4(String), 내용4(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,753 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목5(String), 내용5(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,753 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목6(String), 내용6(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,753 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목7(String), 내용7(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,753 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목8(String), 내용8(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,763 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목9(String), 내용9(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,763 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목10(String), 내용10(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,763 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목11(String), 내용11(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,763 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목12(String), 내용12(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,763 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목13(String), 내용13(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,763 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목14(String), 내용14(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,763 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목15(String), 내용15(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,763 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목16(String), 내용16(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,773 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목17(String), 내용17(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,773 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목18(String), 내용18(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,773 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목19(String), 내용19(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,773 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목20(String), 내용20(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,773 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목21(String), 내용21(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,773 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목22(String), 내용22(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,783 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목23(String), 내용23(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,783 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목24(String), 내용24(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,783 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목25(String), 내용25(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,783 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목26(String), 내용26(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,783 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목27(String), 내용27(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,783 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목28(String), 내용28(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,793 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목29(String), 내용29(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,793 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목30(String), 내용30(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,793 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목31(String), 내용31(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,793 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목32(String), 내용32(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,793 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목33(String), 내용33(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,793 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목34(String), 내용34(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,793 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목35(String), 내용35(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,793 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목36(String), 내용36(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,793 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목37(String), 내용37(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,793 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목38(String), 내용38(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,793 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목39(String), 내용39(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,803 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목40(String), 내용40(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,803 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목41(String), 내용41(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,803 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목42(String), 내용42(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,803 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목43(String), 내용43(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,803 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목44(String), 내용44(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,803 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목45(String), 내용45(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,803 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목46(String), 내용46(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,803 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목47(String), 내용47(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,803 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목48(String), 내용48(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,803 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목49(String), 내용49(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,813 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목50(String), 내용50(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,813 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목51(String), 내용51(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,813 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목52(String), 내용52(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,813 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목53(String), 내용53(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,813 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목54(String), 내용54(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,813 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목55(String), 내용55(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,813 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목56(String), 내용56(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,813 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목57(String), 내용57(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,813 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목58(String), 내용58(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,813 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목59(String), 내용59(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,813 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목60(String), 내용60(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,813 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목61(String), 내용61(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,823 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목62(String), 내용62(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,823 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목63(String), 내용63(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,823 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목64(String), 내용64(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,823 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목65(String), 내용65(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,823 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목66(String), 내용66(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,823 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목67(String), 내용67(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,823 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목68(String), 내용68(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,823 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목69(String), 내용69(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,823 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목70(String), 내용70(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,823 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목71(String), 내용71(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,823 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목72(String), 내용72(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,823 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목73(String), 내용73(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,823 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목74(String), 내용74(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,833 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목75(String), 내용75(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,833 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목76(String), 내용76(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,833 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목77(String), 내용77(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,833 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목78(String), 내용78(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,833 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목79(String), 내용79(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,833 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목80(String), 내용80(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,833 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목81(String), 내용81(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,833 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목82(String), 내용82(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,833 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목83(String), 내용83(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,833 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목84(String), 내용84(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,833 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목85(String), 내용85(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,833 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목86(String), 내용86(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,843 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목87(String), 내용87(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,843 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목88(String), 내용88(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,843 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목89(String), 내용89(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,843 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목90(String), 내용90(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,843 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목91(String), 내용91(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,843 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목92(String), 내용92(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,843 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목93(String), 내용93(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,853 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목94(String), 내용94(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,853 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목95(String), 내용95(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,853 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목96(String), 내용96(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,853 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목97(String), 내용97(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,853 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목98(String), 내용98(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,853 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목99(String), 내용99(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:11:11,853 DEBUG java.sql.PreparedStatement - ==> Parameters: 제목100(String), 내용100(String), 1(Long), 2016-01-01 20:11:11.581(Timestamp)
+1월 01 2016 20:14:44,419 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@187e366c]
+1월 01 2016 20:14:44,429 DEBUG java.sql.Connection - ==>  Preparing: DELETE FROM WES_ARTICLE WHERE ARTICLE_ID = ? AND CREATOR_ID = ? 
+1월 01 2016 20:14:44,530 DEBUG java.sql.PreparedStatement - ==> Parameters: 3299(Long), 1(Long)

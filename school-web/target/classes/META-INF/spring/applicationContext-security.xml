@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:sec="http://www.springframework.org/schema/security"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+						http://www.springframework.org/schema/security
+						http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+
+	<!-- 시큐리티 어노테이션 사용여부 -->
+	<sec:global-method-security secured-annotations="enabled" />
+
+	<!-- access-denied-page : 권한없을때 호출할 url -->
+	<!-- entry-point-ref : 세션없을때 보내줄 페이지 지정 -->
+	<sec:http use-expressions="true"
+			  access-denied-page="/WEB-INF/views/__system/error/dataAccessDenied.jsp"
+			  entry-point-ref="loginUrlAuthenticationEntryPoint"
+ 			  disable-url-rewriting="true">
+		<sec:custom-filter position="FORM_LOGIN_FILTER" ref="usernamePasswordAuthenticationFilter" /> <!-- 로그인 필터 -->
+		<sec:logout logout-url="/static/j_spring_security_logout" success-handler-ref="logoutSuccessHandler" /> <!-- 로그아웃 처리 -->
+		<sec:intercept-url pattern="/static/j_spring_security_check" access="permitAll" /> <!-- 접근허가url, access는 퍼미션(permitAll은 모두허가, hasRole은 특정권한이 있는 사람만 접근허용(여기선 ROLE_ADMIN권한이 있는 사람만)) -->
+		<sec:intercept-url pattern="/static/**" access="permitAll" />
+		<sec:intercept-url pattern="/images/**" access="permitAll" />
+		<sec:intercept-url pattern="/scripts/**" access="permitAll" />
+		<sec:intercept-url pattern="/favicon.ico" access="permitAll" />
+		<sec:intercept-url pattern="/login" access="permitAll" />
+		<sec:intercept-url pattern="/rest-template/**" access="permitAll" />
+		<sec:intercept-url pattern="/**" access="hasRole('ROLE_MEMBER')" />
+<!-- 		<sec:intercept-url pattern="/**" access="hasRole('ROLE_MEMBER')" requires-channel="https"/> http로 들어오는 요청을 https로 모두 변환 -->
+		<sec:session-management session-authentication-error-url="/login" session-fixation-protection="none">
+			<sec:concurrency-control max-sessions="1" expired-url="/" />
+		</sec:session-management>
+	</sec:http>	
+	
+	<!-- 로그인 필터 -->
+	<bean id="usernamePasswordAuthenticationFilter" class="org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter"> <!-- 아이디가 패스가 맞을때 통과시켜주는 필터 -->
+		<property name="filterProcessesUrl" value="/static/j_spring_security_check"/> <!-- 이 url로 호출이 왔을때 로그인작동 -->
+		<property name="authenticationManager" ref="authenticationManager"/> <!-- 인증 매니저 (실제 로그인 체크) -->
+		<property name="authenticationSuccessHandler" ref="successHandler" /> <!-- 성공시에 별도로직을 태워야할때 -->
+		<property name="authenticationFailureHandler" ref="failureHandler" /> <!-- 실패시에도 별도로직을 태워야할때 -->
+	</bean>
+	<!-- 인증 매니저 -->
+	<sec:authentication-manager alias="authenticationManager">
+		<sec:authentication-provider user-service-ref="WESUserDetailService">
+			<!-- <sec:password-encoder hash="sha" />--> <!-- 비밀번호 암호화 -->
+		</sec:authentication-provider>
+	</sec:authentication-manager>
+	<bean id="WESUserDetailService" class="info.wes.school.web.security.WESUserDetailService" />
+	<!-- 실패,성공시 별도의 핸들러 -->
+	<bean id="successHandler" class="info.wes.school.web.security.handler.WESAuthenticationSuccessHandler">
+		<property name="defaultTargetUrl" value="/users" />
+		<property name="alwaysUseDefaultTargetUrl" value="false"/>
+	</bean>
+	<bean id="failureHandler" class="info.wes.school.web.security.handler.WESAuthenticationFailureHandler">
+		<property name="defaultFailureUrl" value="/login" />
+	</bean>	
+	
+	<!-- 세션없을때 이동할 페이지 지정 -->
+	<bean id="loginUrlAuthenticationEntryPoint" class="org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint">
+		<property name="loginFormUrl" value="/login" />
+	</bean>	
+	
+	<!-- 로그아웃 -->
+	<bean id="logoutSuccessHandler" class="org.springframework.security.web.authentication.logout.SimpleUrlLogoutSuccessHandler">
+		<property name="defaultTargetUrl" value="/login"/> <!-- 로그아웃후 이동할 페이지 -->
+		<property name="targetUrlParameter" value="spring-security-redirect" /> <!-- 권한이 없는 사용자는 강제로 로그아웃 시킴 -->
+	</bean>	
+	
+	<bean id="accessDecisionManager" class="org.springframework.security.access.vote.AffirmativeBased">
+		<property name="decisionVoters">
+			<list>
+				<bean class="org.springframework.security.access.vote.AuthenticatedVoter" />
+				<bean class="org.springframework.security.access.vote.RoleVoter" />
+			</list>
+		</property>
+	</bean>
+</beans>

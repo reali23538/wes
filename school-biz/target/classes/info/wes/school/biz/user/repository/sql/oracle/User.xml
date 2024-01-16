@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="User">
+
+	<sql id="condition">
+		<where>
+			<if test="q != null and q != ''">
+				ID LIKE '%' || #{q} || '%'
+				OR NAME LIKE '%' || #{q} || '%'
+				OR EMAIL LIKE '%' || #{q} || '%'
+			</if>
+		</where>
+	</sql>
+	
+	<select id="count" resultType="long">
+		SELECT COUNT(*)
+		  FROM WES_USER
+		  <include refid="condition" />
+	</select>
+
+	<select id="findPagination" resultType="user">
+		SELECT T1.*
+		  FROM (
+			      SELECT USER_SEQ
+			           , ID
+			           , NAME
+			           , EMAIL
+			           , SEX
+			           , CREATED_DATE
+			           , ROW_NUMBER() OVER (
+			          		ORDER BY USER_SEQ DESC
+			         	 ) AS RNUM
+			        FROM WES_USER
+			        <include refid="condition" />
+      		   ) T1
+    	 WHERE T1.RNUM BETWEEN #{offset} + 1 AND #{offset} + #{limit}
+	</select>
+	
+	<select id="findAll" resultType="user">
+		SELECT USER_SEQ
+			 , ID
+			 , NAME
+			 , EMAIL
+			 , SEX
+			 , CREATED_DATE
+          FROM WES_USER 
+          <include refid="condition" />
+	</select>
+	
+	<select id="findById" resultType="user">
+		SELECT USER_SEQ
+			 , ID
+			 , PASSWORD
+			 , NAME
+			 , EMAIL
+			 , SEX
+			 , ETC
+			 , CREATED_DATE
+		  FROM WES_USER
+		 WHERE USER_SEQ = #{userSeq}
+	</select>
+	
+	<insert id="insert">
+		<selectKey keyProperty="userSeq" order="BEFORE" resultType="Long">
+			SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL
+		</selectKey>
+	
+		INSERT INTO WES_USER
+			(USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC)
+		VALUES
+			(#{userSeq}, #{id}, #{password}, #{name}, #{email}, #{sex}, #{etc})
+	</insert>
+	
+	<update id="update">
+		UPDATE WES_USER
+		   SET NAME = #{name}
+		     , EMAIL = #{email}
+		     , SEX = #{sex}
+		     , ETC = #{etc}
+		 WHERE USER_SEQ = #{userSeq}
+	</update>
+
+	<delete id="delete">
+		DELETE FROM WES_USER
+		 WHERE USER_SEQ = #{userSeq}
+	</delete>
+	
+	<delete id="deletes">
+		DELETE FROM WES_USER
+		 WHERE USER_SEQ IN <foreach collection="list" item="user" open="(" separator="," close=")">#{user.userSeq}</foreach>
+	</delete>
+	
+	<select id="findByLoginId" resultType="user">
+		SELECT USER_SEQ
+			 , ID
+			 , NAME
+			 , PASSWORD
+			 , CREATED_DATE
+			 , WRONG_PASSWORD_COUNT
+			 , IS_LOCKED
+		  FROM WES_USER
+		 WHERE ID = #{id}
+	</select>
+	
+	<update id="resetWrongPasswordCount">
+		UPDATE WES_USER
+		   SET WRONG_PASSWORD_COUNT = 0
+		 WHERE ID = #{id}
+	</update>
+
+	<update id="updateWrongPasswordCount">
+		UPDATE WES_USER
+		   SET WRONG_PASSWORD_COUNT = WRONG_PASSWORD_COUNT + 1
+		 WHERE ID = #{id}
+	</update>
+
+	<update id="updateIsLocked">
+		UPDATE WES_USER
+		   SET IS_LOCKED = 1
+		 WHERE ID = #{id}
+		 	   AND WRONG_PASSWORD_COUNT >= 5
+	</update>
+	
+</mapper>

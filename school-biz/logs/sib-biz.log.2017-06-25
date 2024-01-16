@@ -1,0 +1,24 @@
+6월 25 2017 16:49:17,018 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@6781fd01]
+6월 25 2017 16:49:17,029 DEBUG java.sql.Connection - ==>  Preparing: SELECT COUNT(*) FROM WES_USER WHERE ID LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR EMAIL LIKE '%' || ? || '%' 
+6월 25 2017 16:49:17,140 DEBUG java.sql.PreparedStatement - ==> Parameters: user1(String), user1(String), user1(String)
+6월 25 2017 17:11:21,332 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@70981be]
+6월 25 2017 17:11:21,342 DEBUG java.sql.Connection - ==>  Preparing: SELECT COUNT(*) FROM WES_USER WHERE ID LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR EMAIL LIKE '%' || ? || '%' 
+6월 25 2017 17:11:21,467 DEBUG java.sql.PreparedStatement - ==> Parameters: user1(String), user1(String), user1(String)
+6월 25 2017 17:11:40,322 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@64347412]
+6월 25 2017 17:11:40,331 DEBUG java.sql.Connection - ==>  Preparing: SELECT COUNT(*) FROM WES_USER WHERE ID LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR EMAIL LIKE '%' || ? || '%' 
+6월 25 2017 17:11:40,449 DEBUG java.sql.PreparedStatement - ==> Parameters: user1(String), user1(String), user1(String)
+6월 25 2017 17:13:36,678 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@64347412]
+6월 25 2017 17:13:36,687 DEBUG java.sql.Connection - ==>  Preparing: SELECT COUNT(*) FROM WES_USER WHERE ID LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR EMAIL LIKE '%' || ? || '%' 
+6월 25 2017 17:13:36,801 DEBUG java.sql.PreparedStatement - ==> Parameters: user1(String), user1(String), user1(String)
+6월 25 2017 17:20:07,170 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@38bb633e]
+6월 25 2017 17:20:07,186 DEBUG java.sql.Connection - ==>  Preparing: SELECT T1.* FROM ( SELECT USER_SEQ , ID , NAME , EMAIL , SEX , CREATED_DATE , ROW_NUMBER() OVER ( ORDER BY USER_SEQ DESC ) AS RNUM FROM WES_USER WHERE ID LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR EMAIL LIKE '%' || ? || '%' ) T1 WHERE T1.RNUM BETWEEN ? + 1 AND ? + ? 
+6월 25 2017 17:20:07,312 DEBUG java.sql.PreparedStatement - ==> Parameters: user1(String), user1(String), user1(String), 0(Long), 0(Long), 10(Long)
+6월 25 2017 17:21:43,627 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@18a8b9e9]
+6월 25 2017 17:21:43,643 DEBUG java.sql.Connection - ==>  Preparing: SELECT USER_SEQ , ID , NAME , EMAIL , SEX , CREATED_DATE FROM WES_USER WHERE ID LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR EMAIL LIKE '%' || ? || '%' 
+6월 25 2017 17:21:43,753 DEBUG java.sql.PreparedStatement - ==> Parameters: user1(String), user1(String), user1(String)
+6월 25 2017 17:24:00,816 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@2fb222d2]
+6월 25 2017 17:24:00,832 DEBUG java.sql.Connection - ==>  Preparing: SELECT USER_SEQ , ID , PASSWORD , NAME , EMAIL , SEX , ETC , CREATED_DATE FROM WES_USER WHERE USER_SEQ = ? 
+6월 25 2017 17:24:00,942 DEBUG java.sql.PreparedStatement - ==> Parameters: 101(Long)
+6월 25 2017 17:24:15,248 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@1afab0dd]
+6월 25 2017 17:24:15,248 DEBUG java.sql.Connection - ==>  Preparing: SELECT USER_SEQ , ID , PASSWORD , NAME , EMAIL , SEX , ETC , CREATED_DATE FROM WES_USER WHERE USER_SEQ = ? 
+6월 25 2017 17:24:15,358 DEBUG java.sql.PreparedStatement - ==> Parameters: 102(Long)

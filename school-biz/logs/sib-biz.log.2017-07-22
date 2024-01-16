@@ -1,0 +1,187 @@
+7월 22 2017 18:54:53,703 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@47a082a]
+7월 22 2017 18:54:53,723 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (SEQ_WES_USER.NEXTVAL, ?, ?, ?, ?, ?, ?) 
+7월 22 2017 18:54:53,864 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+7월 22 2017 18:58:26,728 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@18ca3955]
+7월 22 2017 18:58:26,738 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (SEQ_WES_USER.NEXTVAL, ?, ?, ?, ?, ?, ?) 
+7월 22 2017 18:58:26,869 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+7월 22 2017 18:58:26,919 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@18ca3955]
+7월 22 2017 18:58:26,919 DEBUG java.sql.Connection - ==>  Preparing: SELECT COUNT(*) FROM WES_USER WHERE ID LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR EMAIL LIKE '%' || ? || '%' 
+7월 22 2017 18:58:26,919 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), awj0603(String), awj0603(String)
+7월 22 2017 18:58:44,970 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@6255163c]
+7월 22 2017 18:58:44,980 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (SEQ_WES_USER.NEXTVAL, ?, ?, ?, ?, ?, ?) 
+7월 22 2017 18:58:45,111 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+7월 22 2017 18:58:45,153 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@6255163c]
+7월 22 2017 18:58:45,153 DEBUG java.sql.Connection - ==>  Preparing: SELECT COUNT(*) FROM WES_USER WHERE ID LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR EMAIL LIKE '%' || ? || '%' 
+7월 22 2017 18:58:45,153 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0415(String), awj0415(String), awj0415(String)
+7월 22 2017 19:02:56,819 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@506df2a4]
+7월 22 2017 19:02:56,840 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (SEQ_WES_USER.NEXTVAL, ?, ?, ?, ?, ?, ?) 
+7월 22 2017 19:02:57,030 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+7월 22 2017 19:02:57,092 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@506df2a4]
+7월 22 2017 19:02:57,092 DEBUG java.sql.Connection - ==>  Preparing: SELECT T1.* FROM ( SELECT USER_SEQ , ID , NAME , EMAIL , SEX , CREATED_DATE , ROW_NUMBER() OVER ( ORDER BY USER_SEQ DESC ) AS RNUM FROM WES_USER WHERE ID LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR EMAIL LIKE '%' || ? || '%' ) T1 WHERE T1.RNUM BETWEEN ? + 1 AND ? + ? 
+7월 22 2017 19:02:57,092 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), awj0603(String), awj0603(String), 0(Long), 0(Long), 10(Long)
+7월 22 2017 19:03:51,716 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@195fba5]
+7월 22 2017 19:03:51,726 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (SEQ_WES_USER.NEXTVAL, ?, ?, ?, ?, ?, ?) 
+7월 22 2017 19:03:51,937 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+7월 22 2017 19:03:51,999 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@195fba5]
+7월 22 2017 19:03:51,999 DEBUG java.sql.Connection - ==>  Preparing: SELECT USER_SEQ , ID , NAME , EMAIL , SEX , CREATED_DATE FROM WES_USER WHERE ID LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR EMAIL LIKE '%' || ? || '%' 
+7월 22 2017 19:03:51,999 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), awj0603(String), awj0603(String)
+7월 22 2017 19:06:09,663 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@47a082a]
+7월 22 2017 19:06:09,673 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+7월 22 2017 19:06:09,804 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+7월 22 2017 19:06:56,433 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@4026ef93]
+7월 22 2017 19:06:56,443 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+7월 22 2017 19:06:56,644 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+7월 22 2017 19:06:56,704 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@4026ef93]
+7월 22 2017 19:06:56,704 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (SEQ_WES_USER.NEXTVAL, ?, ?, ?, ?, ?, ?) 
+7월 22 2017 19:06:56,714 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+7월 22 2017 19:12:17,106 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@4026ef93]
+7월 22 2017 19:12:17,116 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+7월 22 2017 19:12:17,257 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+7월 22 2017 19:12:17,297 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@4026ef93]
+7월 22 2017 19:12:17,297 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (SEQ_WES_USER.NEXTVAL, ?, ?, ?, ?, ?, ?) 
+7월 22 2017 19:12:17,297 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+7월 22 2017 19:12:17,307 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@4026ef93]
+7월 22 2017 19:12:17,307 DEBUG java.sql.Connection - ==>  Preparing: SELECT USER_SEQ , ID , PASSWORD , NAME , EMAIL , SEX , ETC , CREATED_DATE FROM WES_USER WHERE USER_SEQ = ? 
+7월 22 2017 19:12:17,307 DEBUG java.sql.PreparedStatement - ==> Parameters: 149(Long)
+7월 22 2017 19:15:26,126 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@4026ef93]
+7월 22 2017 19:15:26,136 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+7월 22 2017 19:15:26,270 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+7월 22 2017 19:15:26,312 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@4026ef93]
+7월 22 2017 19:15:26,312 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (SEQ_WES_USER.NEXTVAL, ?, ?, ?, ?, ?, ?) 
+7월 22 2017 19:15:26,312 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+7월 22 2017 19:15:26,312 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@4026ef93]
+7월 22 2017 19:15:26,312 DEBUG java.sql.Connection - ==>  Preparing: SELECT USER_SEQ , ID , PASSWORD , NAME , EMAIL , SEX , ETC , CREATED_DATE FROM WES_USER WHERE USER_SEQ = ? 
+7월 22 2017 19:15:26,312 DEBUG java.sql.PreparedStatement - ==> Parameters: 151(Long)
+7월 22 2017 19:19:30,631 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@344113f8]
+7월 22 2017 19:19:30,641 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+7월 22 2017 19:19:30,753 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+7월 22 2017 19:19:30,803 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@344113f8]
+7월 22 2017 19:19:30,803 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (SEQ_WES_USER.NEXTVAL, ?, ?, ?, ?, ?, ?) 
+7월 22 2017 19:19:30,803 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+7월 22 2017 19:19:30,803 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@344113f8]
+7월 22 2017 19:19:30,803 DEBUG java.sql.Connection - ==>  Preparing: SELECT USER_SEQ , ID , PASSWORD , NAME , EMAIL , SEX , ETC , CREATED_DATE FROM WES_USER WHERE USER_SEQ = ? 
+7월 22 2017 19:19:30,813 DEBUG java.sql.PreparedStatement - ==> Parameters: 153(Long)
+7월 22 2017 19:19:58,789 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@6255163c]
+7월 22 2017 19:19:58,799 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+7월 22 2017 19:19:58,967 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+7월 22 2017 19:19:59,037 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@6255163c]
+7월 22 2017 19:19:59,037 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (SEQ_WES_USER.NEXTVAL, ?, ?, ?, ?, ?, ?) 
+7월 22 2017 19:19:59,047 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+7월 22 2017 19:19:59,047 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@6255163c]
+7월 22 2017 19:19:59,047 DEBUG java.sql.Connection - ==>  Preparing: SELECT USER_SEQ , ID , PASSWORD , NAME , EMAIL , SEX , ETC , CREATED_DATE FROM WES_USER WHERE USER_SEQ = ? 
+7월 22 2017 19:19:59,047 DEBUG java.sql.PreparedStatement - ==> Parameters: 155(Long)
+7월 22 2017 19:21:26,094 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@506df2a4]
+7월 22 2017 19:21:26,104 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+7월 22 2017 19:21:26,295 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+7월 22 2017 19:21:26,357 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@506df2a4]
+7월 22 2017 19:21:26,357 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (SEQ_WES_USER.NEXTVAL, ?, ?, ?, ?, ?, ?) 
+7월 22 2017 19:21:26,357 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+7월 22 2017 19:21:26,367 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@506df2a4]
+7월 22 2017 19:21:26,367 DEBUG java.sql.Connection - ==>  Preparing: SELECT USER_SEQ , ID , PASSWORD , NAME , EMAIL , SEX , ETC , CREATED_DATE FROM WES_USER WHERE USER_SEQ = ? 
+7월 22 2017 19:21:26,367 DEBUG java.sql.PreparedStatement - ==> Parameters: 157(Long)
+7월 22 2017 19:22:13,084 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@2686e6ed]
+7월 22 2017 19:22:13,084 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+7월 22 2017 19:22:13,225 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+7월 22 2017 19:22:13,285 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@2686e6ed]
+7월 22 2017 19:22:13,285 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (SEQ_WES_USER.NEXTVAL, ?, ?, ?, ?, ?, ?) 
+7월 22 2017 19:22:13,285 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+7월 22 2017 19:22:38,672 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@34806f42]
+7월 22 2017 19:22:38,692 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+7월 22 2017 19:22:38,874 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+7월 22 2017 19:22:38,934 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@34806f42]
+7월 22 2017 19:22:38,934 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (SEQ_WES_USER.NEXTVAL, ?, ?, ?, ?, ?, ?) 
+7월 22 2017 19:22:38,934 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+7월 22 2017 19:22:38,994 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@d7dec37]
+7월 22 2017 19:22:38,994 DEBUG java.sql.Connection - ==>  Preparing: SELECT USER_SEQ , ID , PASSWORD , NAME , EMAIL , SEX , ETC , CREATED_DATE FROM WES_USER WHERE USER_SEQ = ? 
+7월 22 2017 19:22:38,994 DEBUG java.sql.PreparedStatement - ==> Parameters: 161(Long)
+7월 22 2017 19:23:58,675 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@5c0870fb]
+7월 22 2017 19:23:58,685 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+7월 22 2017 19:23:58,806 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+7월 22 2017 19:23:58,846 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@5c0870fb]
+7월 22 2017 19:23:58,846 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (?, ?, ?, ?, ?, ?, ?) 
+7월 22 2017 19:23:58,846 DEBUG java.sql.PreparedStatement - ==> Parameters: 163(Long), awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+7월 22 2017 19:23:58,886 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@461f15cc]
+7월 22 2017 19:23:58,886 DEBUG java.sql.Connection - ==>  Preparing: SELECT USER_SEQ , ID , PASSWORD , NAME , EMAIL , SEX , ETC , CREATED_DATE FROM WES_USER WHERE USER_SEQ = ? 
+7월 22 2017 19:23:58,886 DEBUG java.sql.PreparedStatement - ==> Parameters: 163(Long)
+7월 22 2017 19:25:38,011 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@344113f8]
+7월 22 2017 19:25:38,021 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+7월 22 2017 19:25:38,142 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+7월 22 2017 19:25:38,192 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@344113f8]
+7월 22 2017 19:25:38,192 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (?, ?, ?, ?, ?, ?, ?) 
+7월 22 2017 19:25:38,202 DEBUG java.sql.PreparedStatement - ==> Parameters: 164(Long), awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+7월 22 2017 19:25:38,202 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@344113f8]
+7월 22 2017 19:25:38,202 DEBUG java.sql.Connection - ==>  Preparing: SELECT USER_SEQ , ID , PASSWORD , NAME , EMAIL , SEX , ETC , CREATED_DATE FROM WES_USER WHERE USER_SEQ = ? 
+7월 22 2017 19:25:38,202 DEBUG java.sql.PreparedStatement - ==> Parameters: 164(Long)
+7월 22 2017 19:25:53,742 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@67adffb1]
+7월 22 2017 19:25:53,752 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+7월 22 2017 19:25:53,933 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+7월 22 2017 19:25:53,993 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@67adffb1]
+7월 22 2017 19:25:53,993 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (?, ?, ?, ?, ?, ?, ?) 
+7월 22 2017 19:25:53,993 DEBUG java.sql.PreparedStatement - ==> Parameters: 165(Long), awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+7월 22 2017 19:25:53,993 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@67adffb1]
+7월 22 2017 19:25:53,993 DEBUG java.sql.Connection - ==>  Preparing: SELECT USER_SEQ , ID , PASSWORD , NAME , EMAIL , SEX , ETC , CREATED_DATE FROM WES_USER WHERE USER_SEQ = ? 
+7월 22 2017 19:25:53,993 DEBUG java.sql.PreparedStatement - ==> Parameters: 165(Long)
+7월 22 2017 19:26:42,822 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@6255163c]
+7월 22 2017 19:26:42,832 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+7월 22 2017 19:26:43,023 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+7월 22 2017 19:26:43,085 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@6255163c]
+7월 22 2017 19:26:43,085 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (?, ?, ?, ?, ?, ?, ?) 
+7월 22 2017 19:26:43,085 DEBUG java.sql.PreparedStatement - ==> Parameters: 166(Long), awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+7월 22 2017 19:26:43,085 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@6255163c]
+7월 22 2017 19:26:43,085 DEBUG java.sql.Connection - ==>  Preparing: SELECT USER_SEQ , ID , PASSWORD , NAME , EMAIL , SEX , ETC , CREATED_DATE FROM WES_USER WHERE USER_SEQ = ? 
+7월 22 2017 19:26:43,085 DEBUG java.sql.PreparedStatement - ==> Parameters: 166(Long)
+7월 22 2017 19:29:02,814 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@6255163c]
+7월 22 2017 19:29:02,824 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+7월 22 2017 19:29:02,965 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+7월 22 2017 19:29:03,007 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@6255163c]
+7월 22 2017 19:29:03,007 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (?, ?, ?, ?, ?, ?, ?) 
+7월 22 2017 19:29:03,007 DEBUG java.sql.PreparedStatement - ==> Parameters: 167(Long), awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+7월 22 2017 19:29:03,007 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@6255163c]
+7월 22 2017 19:29:03,007 DEBUG java.sql.Connection - ==>  Preparing: SELECT USER_SEQ , ID , PASSWORD , NAME , EMAIL , SEX , ETC , CREATED_DATE FROM WES_USER WHERE USER_SEQ = ? 
+7월 22 2017 19:29:03,007 DEBUG java.sql.PreparedStatement - ==> Parameters: 167(Long)
+7월 22 2017 19:39:54,309 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@5ec4cba]
+7월 22 2017 19:39:54,319 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+7월 22 2017 19:39:54,440 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+7월 22 2017 19:39:54,490 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@5ec4cba]
+7월 22 2017 19:39:54,490 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (?, ?, ?, ?, ?, ?, ?) 
+7월 22 2017 19:39:54,490 DEBUG java.sql.PreparedStatement - ==> Parameters: 168(Long), awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+7월 22 2017 19:39:54,490 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@5ec4cba]
+7월 22 2017 19:39:54,490 DEBUG java.sql.Connection - ==>  Preparing: UPDATE WES_USER SET NAME = ? , EMAIL = ? , SEX = ? , ETC = ? WHERE USER_SEQ = ? 
+7월 22 2017 19:39:54,490 DEBUG java.sql.PreparedStatement - ==> Parameters: 안우연(String), awj0415@gmail.com(String), false(Boolean), 프리랜서 디자이너 입니다.(String), 168(Long)
+7월 22 2017 19:39:54,500 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@5ec4cba]
+7월 22 2017 19:39:54,500 DEBUG java.sql.Connection - ==>  Preparing: SELECT USER_SEQ , ID , PASSWORD , NAME , EMAIL , SEX , ETC , CREATED_DATE FROM WES_USER WHERE USER_SEQ = ? 
+7월 22 2017 19:39:54,500 DEBUG java.sql.PreparedStatement - ==> Parameters: 168(Long)
+7월 22 2017 19:40:48,923 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@5ec4cba]
+7월 22 2017 19:40:48,933 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+7월 22 2017 19:40:49,064 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+7월 22 2017 19:40:49,114 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@5ec4cba]
+7월 22 2017 19:40:49,114 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (?, ?, ?, ?, ?, ?, ?) 
+7월 22 2017 19:40:49,114 DEBUG java.sql.PreparedStatement - ==> Parameters: 169(Long), awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+7월 22 2017 19:40:49,114 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@5ec4cba]
+7월 22 2017 19:40:49,114 DEBUG java.sql.Connection - ==>  Preparing: UPDATE WES_USER SET NAME = ? , EMAIL = ? , SEX = ? , ETC = ? WHERE USER_SEQ = ? 
+7월 22 2017 19:40:49,114 DEBUG java.sql.PreparedStatement - ==> Parameters: 안우주(String), awj0415@gmail.com(String), false(Boolean), 프리랜서 디자이너 입니다.(String), 169(Long)
+7월 22 2017 19:40:49,114 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@5ec4cba]
+7월 22 2017 19:40:49,114 DEBUG java.sql.Connection - ==>  Preparing: SELECT USER_SEQ , ID , PASSWORD , NAME , EMAIL , SEX , ETC , CREATED_DATE FROM WES_USER WHERE USER_SEQ = ? 
+7월 22 2017 19:40:49,114 DEBUG java.sql.PreparedStatement - ==> Parameters: 169(Long)
+7월 22 2017 19:42:48,009 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@27f993d4]
+7월 22 2017 19:42:48,030 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+7월 22 2017 19:42:48,210 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+7월 22 2017 19:42:48,270 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@27f993d4]
+7월 22 2017 19:42:48,270 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (?, ?, ?, ?, ?, ?, ?) 
+7월 22 2017 19:42:48,270 DEBUG java.sql.PreparedStatement - ==> Parameters: 170(Long), awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+7월 22 2017 19:42:48,270 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@27f993d4]
+7월 22 2017 19:42:48,270 DEBUG java.sql.Connection - ==>  Preparing: DELETE FROM WES_USER WHERE USER_SEQ = ? 
+7월 22 2017 19:42:48,270 DEBUG java.sql.PreparedStatement - ==> Parameters: 170(Long)
+7월 22 2017 19:50:41,095 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@6119d27b]
+7월 22 2017 19:50:41,105 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+7월 22 2017 19:50:41,246 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+7월 22 2017 19:50:41,288 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@6119d27b]
+7월 22 2017 19:50:41,288 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (?, ?, ?, ?, ?, ?, ?) 
+7월 22 2017 19:50:41,288 DEBUG java.sql.PreparedStatement - ==> Parameters: 171(Long), awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+7월 22 2017 19:50:41,288 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@6119d27b]
+7월 22 2017 19:50:41,288 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+7월 22 2017 19:50:41,288 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+7월 22 2017 19:50:41,288 DEBUG java.sql.PreparedStatement - ==> Parameters: 172(Long), awj0415(String), p@ssw@rd(String), 안우주(String), awj0415@gmail.com(String), false(Boolean), 프리랜서 디자이너 입니다.(String)
+7월 22 2017 19:50:41,328 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@6119d27b]
+7월 22 2017 19:50:41,328 DEBUG java.sql.Connection - ==>  Preparing: DELETE FROM WES_USER WHERE USER_SEQ IN ( ? , ? ) 
+7월 22 2017 19:50:41,328 DEBUG java.sql.PreparedStatement - ==> Parameters: 171(Long), 172(Long)

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds"> <!-- 30초마다 해당 로그파일이 변경됐는지 검사하여 즉각반영 -->
+	<property name="LOGS_ABSOLUTE_PATH" value="C:\\Projects\\WES\\WORK\\logs" />
+	
+	<!-- appender : 어떻게 로그를 찍을지 지정 -->
+<!-- 	<appender name="STDOUTOLD" class="ch.qos.logback.core.ConsoleAppender"> -->
+<!-- 		<layout class="ch.qos.logback.classic.PatternLayout"> -->
+<!-- 			<Pattern>%d{HH:mm} %-5level %logger{36} - %msg%n</Pattern> -->
+<!-- 		</layout> -->
+<!-- 	</appender> -->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>[%d{yyyy-MM-dd HH:mm:ss}:%-3relative][%thread] %-5level %logger{35} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	<appender name="ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOGS_ABSOLUTE_PATH}\\logback.log</file>
+		<encoder>
+			<pattern>[%d{yyyy-MM-dd HH:mm:ss}:%-3relative][%thread] %-5level %logger{35} - %msg%n</pattern>
+		</encoder>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOGS_ABSOLUTE_PATH}/logback.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern> <!-- gz,zip 지정시 자동압축 -->
+			<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<maxFileSize>5MB</maxFileSize> <!-- KB, MB, GB -->
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>30</maxHistory> <!-- 30일동안 저장 -->
+		</rollingPolicy>
+	</appender>
+
+	<!-- 로그가 사용될 패키지와 레벨을 지정 -->
+	<!-- 로그레벨 : ERROR < WARN < INFO < DEBUG < TRACE -->
+	<logger name="info.wes.school" level="INFO"> <!-- info.wes.school패키지 이하 모두 적용 -->
+		<appender-ref ref="STDOUT" />
+	</logger>
+	<logger name="info.wes.school" level="INFO">
+		<appender-ref ref="ROLLING" />
+	</logger>
+
+<!-- 	<root level="INFO"> -->
+<!-- 		<appender-ref ref="STDOUTOLD" /> -->
+<!-- 	</root> -->
+</configuration>

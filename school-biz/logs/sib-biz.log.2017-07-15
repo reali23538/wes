@@ -1,0 +1,25 @@
+7월 15 2017 21:57:33,788 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@3c3abccc]
+7월 15 2017 21:57:33,788 DEBUG java.sql.Connection - ==>  Preparing: SELECT USER_SEQ , ID , NAME , PASSWORD , CREATED_DATE , WRONG_PASSWORD_COUNT , IS_LOCKED FROM WES_USER WHERE ID = ? 
+7월 15 2017 21:57:33,914 DEBUG java.sql.PreparedStatement - ==> Parameters: user1(String)
+7월 15 2017 22:01:18,399 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@560d7606]
+7월 15 2017 22:01:18,399 DEBUG java.sql.Connection - ==>  Preparing: UPDATE WES_USER SET WRONG_PASSWORD_COUNT = 0 WHERE ID = ? 
+7월 15 2017 22:01:18,525 DEBUG java.sql.PreparedStatement - ==> Parameters: user1(String)
+7월 15 2017 22:07:32,053 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@622f4f19]
+7월 15 2017 22:07:32,068 DEBUG java.sql.Connection - ==>  Preparing: UPDATE WES_USER SET WRONG_PASSWORD_COUNT = 0 WHERE ID = ? 
+7월 15 2017 22:07:32,179 DEBUG java.sql.PreparedStatement - ==> Parameters: user1(String)
+7월 15 2017 22:10:29,146 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@8fd4727]
+7월 15 2017 22:10:29,146 DEBUG java.sql.Connection - ==>  Preparing: UPDATE WES_USER SET WRONG_PASSWORD_COUNT = WRONG_PASSWORD_COUNT + 1 WHERE ID = ? 
+7월 15 2017 22:10:29,257 DEBUG java.sql.PreparedStatement - ==> Parameters: user1(String)
+7월 15 2017 22:13:43,010 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@44578632]
+7월 15 2017 22:13:43,026 DEBUG java.sql.Connection - ==>  Preparing: UPDATE WES_USER SET IS_LOCKED = 1 WHERE ID = ? AND WRONG_PASSWORD_COUNT >= 5 
+7월 15 2017 22:13:43,136 DEBUG java.sql.PreparedStatement - ==> Parameters: user1(String)
+7월 15 2017 22:15:32,805 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@195fba5]
+7월 15 2017 22:15:32,821 DEBUG java.sql.Connection - ==>  Preparing: UPDATE WES_USER SET WRONG_PASSWORD_COUNT = WRONG_PASSWORD_COUNT + 1 WHERE ID = ? 
+7월 15 2017 22:15:32,946 DEBUG java.sql.PreparedStatement - ==> Parameters: user1(String)
+7월 15 2017 22:15:32,946 DEBUG java.sql.PreparedStatement - ==> Parameters: user1(String)
+7월 15 2017 22:15:32,946 DEBUG java.sql.PreparedStatement - ==> Parameters: user1(String)
+7월 15 2017 22:15:32,946 DEBUG java.sql.PreparedStatement - ==> Parameters: user1(String)
+7월 15 2017 22:15:32,946 DEBUG java.sql.PreparedStatement - ==> Parameters: user1(String)
+7월 15 2017 22:15:32,946 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@195fba5]
+7월 15 2017 22:15:32,946 DEBUG java.sql.Connection - ==>  Preparing: UPDATE WES_USER SET IS_LOCKED = 1 WHERE ID = ? AND WRONG_PASSWORD_COUNT >= 5 
+7월 15 2017 22:15:32,946 DEBUG java.sql.PreparedStatement - ==> Parameters: user1(String)

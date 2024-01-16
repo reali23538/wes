@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/layouts"> <!-- default 디렉토리 지정 -->
+	
+	<!-- 템플릿 제외할 패턴 지정 -->
+	<excludes>
+		<pattern>*/images/*</pattern>
+		<pattern>*/scripts/*</pattern>
+		<pattern>/files/**</pattern>
+		<pattern>/rest-template/**</pattern>
+		<pattern>/json**</pattern>
+		<pattern>/ajax</pattern>
+		<pattern>/cookies**</pattern>
+		<pattern>/cookieUtil**</pattern>
+		<pattern>/storage/**</pattern>
+		<pattern>/sns/**</pattern>
+		<pattern>/maps/**</pattern>
+	</excludes>
+	
+	<!-- 모든패턴 접근시 default.jsp 레이아웃을 씌움 -->
+	<decorator name="default" page="default.jsp">
+		<pattern>/*</pattern>
+	</decorator>
+	
+	<decorator name="none" page="none.jsp">
+		<pattern>/login</pattern>
+	</decorator>
+
+</decorators>

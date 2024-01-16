@@ -1,0 +1,1335 @@
+9월 16 2017 18:17:16,422 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@2daa8563]
+9월 16 2017 18:17:16,438 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 18:17:16,548 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 18:17:16,642 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@2daa8563]
+9월 16 2017 18:17:16,642 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (?, ?, ?, ?, ?, ?, ?) 
+9월 16 2017 18:17:16,642 DEBUG java.sql.PreparedStatement - ==> Parameters: 301(Long), awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+9월 16 2017 18:17:16,642 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@2daa8563]
+9월 16 2017 18:17:16,642 DEBUG java.sql.Connection - ==>  Preparing: UPDATE WES_USER SET NAME = ? , EMAIL = ? , SEX = ? , ETC = ? WHERE USER_SEQ = ? 
+9월 16 2017 18:17:16,642 DEBUG java.sql.PreparedStatement - ==> Parameters: 안우주(String), awj0415@gmail.com(String), false(Boolean), 프리랜서 디자이너 입니다.(String), 301(Long)
+9월 16 2017 18:17:16,642 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@2daa8563]
+9월 16 2017 18:17:16,642 DEBUG java.sql.Connection - ==>  Preparing: SELECT USER_SEQ , ID , PASSWORD , NAME , EMAIL , SEX , ETC , CREATED_DATE FROM WES_USER WHERE USER_SEQ = ? 
+9월 16 2017 18:17:16,642 DEBUG java.sql.PreparedStatement - ==> Parameters: 301(Long)
+9월 16 2017 18:25:53,932 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@2a922e8d]
+9월 16 2017 18:25:53,940 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 18:25:54,055 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 18:25:54,094 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@2a922e8d]
+9월 16 2017 18:25:54,094 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (?, ?, ?, ?, ?, ?, ?) 
+9월 16 2017 18:25:54,095 DEBUG java.sql.PreparedStatement - ==> Parameters: 302(Long), awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+9월 16 2017 18:25:54,131 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@22d7472e]
+9월 16 2017 18:25:54,131 DEBUG java.sql.Connection - ==>  Preparing: UPDATE WES_USER SET NAME = ? , EMAIL = ? , SEX = ? , ETC = ? WHERE USER_SEQ = ? 
+9월 16 2017 18:25:54,131 DEBUG java.sql.PreparedStatement - ==> Parameters: 안우주(String), awj0415@gmail.com(String), false(Boolean), 프리랜서 디자이너 입니다.(String), 302(Long)
+9월 16 2017 18:25:54,171 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@63822ee0]
+9월 16 2017 18:25:54,172 DEBUG java.sql.Connection - ==>  Preparing: SELECT USER_SEQ , ID , PASSWORD , NAME , EMAIL , SEX , ETC , CREATED_DATE FROM WES_USER WHERE USER_SEQ = ? 
+9월 16 2017 18:25:54,172 DEBUG java.sql.PreparedStatement - ==> Parameters: 302(Long)
+9월 16 2017 18:30:46,754 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@4e2b6226]
+9월 16 2017 18:30:46,770 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 18:30:46,880 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 18:30:46,911 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@4e2b6226]
+9월 16 2017 18:30:46,911 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (?, ?, ?, ?, ?, ?, ?) 
+9월 16 2017 18:30:46,911 DEBUG java.sql.PreparedStatement - ==> Parameters: 303(Long), awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+9월 16 2017 18:30:46,911 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@4e2b6226]
+9월 16 2017 18:30:46,911 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 18:30:46,911 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 18:30:46,911 DEBUG java.sql.PreparedStatement - ==> Parameters: 304(Long), awj0415(String), p@ssw@rd(String), 안우주(String), awj0415@gmail.com(String), false(Boolean), 프리랜서 디자이너 입니다.(String)
+9월 16 2017 18:30:46,958 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@4e2b6226]
+9월 16 2017 18:30:46,958 DEBUG java.sql.Connection - ==>  Preparing: SELECT T1.* FROM ( SELECT USER_SEQ , ID , NAME , EMAIL , SEX , CREATED_DATE , ROW_NUMBER() OVER ( ORDER BY USER_SEQ DESC ) AS RNUM FROM WES_USER WHERE ID LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR EMAIL LIKE '%' || ? || '%' ) T1 WHERE T1.RNUM BETWEEN ? + 1 AND ? + ? 
+9월 16 2017 18:30:46,958 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), awj0603(String), awj0603(String), 0(Long), 0(Long), 10(Long)
+9월 16 2017 18:30:46,974 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@4e2b6226]
+9월 16 2017 18:30:46,974 DEBUG java.sql.Connection - ==>  Preparing: SELECT COUNT(*) FROM WES_USER WHERE ID LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR EMAIL LIKE '%' || ? || '%' 
+9월 16 2017 18:30:46,974 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), awj0603(String), awj0603(String)
+9월 16 2017 18:31:20,874 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@161b3e01]
+9월 16 2017 18:31:20,874 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 18:31:21,015 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 18:31:21,062 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@161b3e01]
+9월 16 2017 18:31:21,062 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (?, ?, ?, ?, ?, ?, ?) 
+9월 16 2017 18:31:21,062 DEBUG java.sql.PreparedStatement - ==> Parameters: 305(Long), awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+9월 16 2017 18:31:21,062 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@161b3e01]
+9월 16 2017 18:31:21,062 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 18:31:21,062 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 18:31:21,078 DEBUG java.sql.PreparedStatement - ==> Parameters: 306(Long), awj0415(String), p@ssw@rd(String), 안우주(String), awj0415@gmail.com(String), false(Boolean), 프리랜서 디자이너 입니다.(String)
+9월 16 2017 18:31:21,109 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@161b3e01]
+9월 16 2017 18:31:21,109 DEBUG java.sql.Connection - ==>  Preparing: SELECT T1.* FROM ( SELECT USER_SEQ , ID , NAME , EMAIL , SEX , CREATED_DATE , ROW_NUMBER() OVER ( ORDER BY USER_SEQ DESC ) AS RNUM FROM WES_USER WHERE ID LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR EMAIL LIKE '%' || ? || '%' ) T1 WHERE T1.RNUM BETWEEN ? + 1 AND ? + ? 
+9월 16 2017 18:31:21,109 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), awj0603(String), awj0603(String), 0(Long), 0(Long), 10(Long)
+9월 16 2017 18:31:21,124 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@161b3e01]
+9월 16 2017 18:31:21,124 DEBUG java.sql.Connection - ==>  Preparing: SELECT COUNT(*) FROM WES_USER WHERE ID LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR EMAIL LIKE '%' || ? || '%' 
+9월 16 2017 18:31:21,124 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), awj0603(String), awj0603(String)
+9월 16 2017 18:35:17,201 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@2ce9895d]
+9월 16 2017 18:35:17,216 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 18:35:17,342 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 18:35:17,373 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@2ce9895d]
+9월 16 2017 18:35:17,373 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (?, ?, ?, ?, ?, ?, ?) 
+9월 16 2017 18:35:17,373 DEBUG java.sql.PreparedStatement - ==> Parameters: 307(Long), awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+9월 16 2017 18:35:17,373 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@2ce9895d]
+9월 16 2017 18:35:17,373 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 18:35:17,373 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 18:35:17,373 DEBUG java.sql.PreparedStatement - ==> Parameters: 308(Long), awj0415(String), p@ssw@rd(String), 안우주(String), awj0415@gmail.com(String), false(Boolean), 프리랜서 디자이너 입니다.(String)
+9월 16 2017 18:35:17,420 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@2ce9895d]
+9월 16 2017 18:35:17,420 DEBUG java.sql.Connection - ==>  Preparing: SELECT T1.* FROM ( SELECT USER_SEQ , ID , NAME , EMAIL , SEX , CREATED_DATE , ROW_NUMBER() OVER ( ORDER BY USER_SEQ DESC ) AS RNUM FROM WES_USER WHERE ID LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR EMAIL LIKE '%' || ? || '%' ) T1 WHERE T1.RNUM BETWEEN ? + 1 AND ? + ? 
+9월 16 2017 18:35:17,420 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), awj0603(String), awj0603(String), 0(Long), 0(Long), 10(Long)
+9월 16 2017 18:35:17,436 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@2ce9895d]
+9월 16 2017 18:35:17,436 DEBUG java.sql.Connection - ==>  Preparing: SELECT COUNT(*) FROM WES_USER WHERE ID LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR EMAIL LIKE '%' || ? || '%' 
+9월 16 2017 18:35:17,436 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), awj0603(String), awj0603(String)
+9월 16 2017 18:35:17,436 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@2ce9895d]
+9월 16 2017 18:35:17,436 DEBUG java.sql.Connection - ==>  Preparing: DELETE FROM WES_USER WHERE USER_SEQ = ? 
+9월 16 2017 18:35:17,436 DEBUG java.sql.PreparedStatement - ==> Parameters: 307(Long)
+9월 16 2017 18:36:37,621 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@5683befd]
+9월 16 2017 18:36:37,636 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 18:36:37,747 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 18:36:37,778 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@5683befd]
+9월 16 2017 18:36:37,778 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (?, ?, ?, ?, ?, ?, ?) 
+9월 16 2017 18:36:37,778 DEBUG java.sql.PreparedStatement - ==> Parameters: 309(Long), awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+9월 16 2017 18:36:37,778 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@5683befd]
+9월 16 2017 18:36:37,778 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 18:36:37,778 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 18:36:37,778 DEBUG java.sql.PreparedStatement - ==> Parameters: 310(Long), awj0415(String), p@ssw@rd(String), 안우주(String), awj0415@gmail.com(String), false(Boolean), 프리랜서 디자이너 입니다.(String)
+9월 16 2017 18:36:37,825 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@5683befd]
+9월 16 2017 18:36:37,825 DEBUG java.sql.Connection - ==>  Preparing: SELECT T1.* FROM ( SELECT USER_SEQ , ID , NAME , EMAIL , SEX , CREATED_DATE , ROW_NUMBER() OVER ( ORDER BY USER_SEQ DESC ) AS RNUM FROM WES_USER WHERE ID LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR EMAIL LIKE '%' || ? || '%' ) T1 WHERE T1.RNUM BETWEEN ? + 1 AND ? + ? 
+9월 16 2017 18:36:37,825 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), awj0603(String), awj0603(String), 0(Long), 0(Long), 10(Long)
+9월 16 2017 18:36:37,825 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@5683befd]
+9월 16 2017 18:36:37,825 DEBUG java.sql.Connection - ==>  Preparing: SELECT COUNT(*) FROM WES_USER WHERE ID LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR EMAIL LIKE '%' || ? || '%' 
+9월 16 2017 18:36:37,825 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), awj0603(String), awj0603(String)
+9월 16 2017 18:36:37,840 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@5683befd]
+9월 16 2017 18:36:37,840 DEBUG java.sql.Connection - ==>  Preparing: DELETE FROM WES_USER WHERE USER_SEQ = ? 
+9월 16 2017 18:36:37,840 DEBUG java.sql.PreparedStatement - ==> Parameters: 309(Long)
+9월 16 2017 18:38:24,764 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@161b3e01]
+9월 16 2017 18:38:24,764 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 18:38:24,890 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 18:38:24,921 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@161b3e01]
+9월 16 2017 18:38:24,921 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (?, ?, ?, ?, ?, ?, ?) 
+9월 16 2017 18:38:24,921 DEBUG java.sql.PreparedStatement - ==> Parameters: 311(Long), awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+9월 16 2017 18:38:24,921 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@161b3e01]
+9월 16 2017 18:38:24,921 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 18:38:24,921 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 18:38:24,921 DEBUG java.sql.PreparedStatement - ==> Parameters: 312(Long), awj0415(String), p@ssw@rd(String), 안우주(String), awj0415@gmail.com(String), false(Boolean), 프리랜서 디자이너 입니다.(String)
+9월 16 2017 18:38:24,968 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@161b3e01]
+9월 16 2017 18:38:24,968 DEBUG java.sql.Connection - ==>  Preparing: SELECT T1.* FROM ( SELECT USER_SEQ , ID , NAME , EMAIL , SEX , CREATED_DATE , ROW_NUMBER() OVER ( ORDER BY USER_SEQ DESC ) AS RNUM FROM WES_USER WHERE ID LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR EMAIL LIKE '%' || ? || '%' ) T1 WHERE T1.RNUM BETWEEN ? + 1 AND ? + ? 
+9월 16 2017 18:38:24,968 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), awj0603(String), awj0603(String), 0(Long), 0(Long), 10(Long)
+9월 16 2017 18:38:24,968 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@161b3e01]
+9월 16 2017 18:38:24,968 DEBUG java.sql.Connection - ==>  Preparing: SELECT COUNT(*) FROM WES_USER WHERE ID LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR EMAIL LIKE '%' || ? || '%' 
+9월 16 2017 18:38:24,968 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), awj0603(String), awj0603(String)
+9월 16 2017 18:38:24,968 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@161b3e01]
+9월 16 2017 18:38:24,968 DEBUG java.sql.Connection - ==>  Preparing: DELETE FROM WES_USER WHERE USER_SEQ = ? 
+9월 16 2017 18:38:24,968 DEBUG java.sql.PreparedStatement - ==> Parameters: 311(Long)
+9월 16 2017 18:40:28,973 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@71a14a8e]
+9월 16 2017 18:40:28,989 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 18:40:29,099 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 18:40:29,130 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@71a14a8e]
+9월 16 2017 18:40:29,130 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (?, ?, ?, ?, ?, ?, ?) 
+9월 16 2017 18:40:29,130 DEBUG java.sql.PreparedStatement - ==> Parameters: 313(Long), awj0603(String), p@ssw@rd(String), 안우진(String), awj0603@gmail.com(String), true(Boolean), 프리랜서 개발자 입니다.(String)
+9월 16 2017 18:40:29,177 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@77d3a729]
+9월 16 2017 18:40:29,177 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 18:40:29,177 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 18:40:29,177 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@77d3a729]
+9월 16 2017 18:40:29,177 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (?, ?, ?, ?, ?, ?, ?) 
+9월 16 2017 18:40:29,177 DEBUG java.sql.PreparedStatement - ==> Parameters: 314(Long), awj0415(String), p@ssw@rd(String), 안우주(String), awj0415@gmail.com(String), false(Boolean), 프리랜서 디자이너 입니다.(String)
+9월 16 2017 18:40:29,255 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@7171ec76]
+9월 16 2017 18:40:29,255 DEBUG java.sql.Connection - ==>  Preparing: SELECT T1.* FROM ( SELECT USER_SEQ , ID , NAME , EMAIL , SEX , CREATED_DATE , ROW_NUMBER() OVER ( ORDER BY USER_SEQ DESC ) AS RNUM FROM WES_USER WHERE ID LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR EMAIL LIKE '%' || ? || '%' ) T1 WHERE T1.RNUM BETWEEN ? + 1 AND ? + ? 
+9월 16 2017 18:40:29,255 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), awj0603(String), awj0603(String), 0(Long), 0(Long), 10(Long)
+9월 16 2017 18:40:29,271 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@7171ec76]
+9월 16 2017 18:40:29,271 DEBUG java.sql.Connection - ==>  Preparing: SELECT COUNT(*) FROM WES_USER WHERE ID LIKE '%' || ? || '%' OR NAME LIKE '%' || ? || '%' OR EMAIL LIKE '%' || ? || '%' 
+9월 16 2017 18:40:29,271 DEBUG java.sql.PreparedStatement - ==> Parameters: awj0603(String), awj0603(String), awj0603(String)
+9월 16 2017 18:40:29,271 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@7171ec76]
+9월 16 2017 18:40:29,271 DEBUG java.sql.Connection - ==>  Preparing: DELETE FROM WES_USER WHERE USER_SEQ = ? 
+9월 16 2017 18:40:29,271 DEBUG java.sql.PreparedStatement - ==> Parameters: 313(Long)
+9월 16 2017 19:32:33,435 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,444 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,560 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,598 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,599 DEBUG java.sql.Connection - ==>  Preparing: INSERT INTO WES_USER (USER_SEQ, ID, PASSWORD, NAME, EMAIL, SEX, ETC) VALUES (?, ?, ?, ?, ?, ?, ?) 
+9월 16 2017 19:32:33,599 DEBUG java.sql.PreparedStatement - ==> Parameters: 315(Long), awj0(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,601 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,601 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,601 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,602 DEBUG java.sql.PreparedStatement - ==> Parameters: 316(Long), awj1(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,603 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,603 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,604 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,605 DEBUG java.sql.PreparedStatement - ==> Parameters: 317(Long), awj2(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,606 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,606 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,606 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,608 DEBUG java.sql.PreparedStatement - ==> Parameters: 318(Long), awj3(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,609 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,609 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,609 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,610 DEBUG java.sql.PreparedStatement - ==> Parameters: 319(Long), awj4(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,611 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,611 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,612 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,613 DEBUG java.sql.PreparedStatement - ==> Parameters: 320(Long), awj5(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,614 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,614 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,614 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,616 DEBUG java.sql.PreparedStatement - ==> Parameters: 321(Long), awj6(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,616 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,617 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,617 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,619 DEBUG java.sql.PreparedStatement - ==> Parameters: 322(Long), awj7(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,620 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,621 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,621 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,622 DEBUG java.sql.PreparedStatement - ==> Parameters: 323(Long), awj8(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,623 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,623 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,624 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,625 DEBUG java.sql.PreparedStatement - ==> Parameters: 324(Long), awj9(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,626 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,626 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,626 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,627 DEBUG java.sql.PreparedStatement - ==> Parameters: 325(Long), awj10(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,628 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,628 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,629 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,630 DEBUG java.sql.PreparedStatement - ==> Parameters: 326(Long), awj11(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,630 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,631 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,631 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,632 DEBUG java.sql.PreparedStatement - ==> Parameters: 327(Long), awj12(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,633 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,633 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,634 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,635 DEBUG java.sql.PreparedStatement - ==> Parameters: 328(Long), awj13(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,636 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,637 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,638 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,639 DEBUG java.sql.PreparedStatement - ==> Parameters: 329(Long), awj14(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,641 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,641 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,641 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,655 DEBUG java.sql.PreparedStatement - ==> Parameters: 330(Long), awj15(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,656 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,657 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,657 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,659 DEBUG java.sql.PreparedStatement - ==> Parameters: 331(Long), awj16(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,660 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,660 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,660 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,662 DEBUG java.sql.PreparedStatement - ==> Parameters: 332(Long), awj17(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,663 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,663 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,663 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,665 DEBUG java.sql.PreparedStatement - ==> Parameters: 333(Long), awj18(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,666 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,666 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,666 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,668 DEBUG java.sql.PreparedStatement - ==> Parameters: 334(Long), awj19(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,669 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,669 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,669 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,670 DEBUG java.sql.PreparedStatement - ==> Parameters: 335(Long), awj20(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,698 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,698 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,698 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,700 DEBUG java.sql.PreparedStatement - ==> Parameters: 336(Long), awj21(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,700 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,701 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,701 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,702 DEBUG java.sql.PreparedStatement - ==> Parameters: 337(Long), awj22(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,703 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,703 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,703 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,704 DEBUG java.sql.PreparedStatement - ==> Parameters: 338(Long), awj23(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,705 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,705 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,705 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,706 DEBUG java.sql.PreparedStatement - ==> Parameters: 339(Long), awj24(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,707 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,707 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,707 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,708 DEBUG java.sql.PreparedStatement - ==> Parameters: 340(Long), awj25(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,709 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,709 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,709 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,710 DEBUG java.sql.PreparedStatement - ==> Parameters: 341(Long), awj26(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,711 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,711 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,712 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,713 DEBUG java.sql.PreparedStatement - ==> Parameters: 342(Long), awj27(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,714 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,714 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,714 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,715 DEBUG java.sql.PreparedStatement - ==> Parameters: 343(Long), awj28(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,716 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,716 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,716 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,717 DEBUG java.sql.PreparedStatement - ==> Parameters: 344(Long), awj29(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,718 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,718 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,718 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,719 DEBUG java.sql.PreparedStatement - ==> Parameters: 345(Long), awj30(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,720 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,720 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,721 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,722 DEBUG java.sql.PreparedStatement - ==> Parameters: 346(Long), awj31(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,722 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,723 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,723 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,724 DEBUG java.sql.PreparedStatement - ==> Parameters: 347(Long), awj32(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,725 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,725 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,725 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,726 DEBUG java.sql.PreparedStatement - ==> Parameters: 348(Long), awj33(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,726 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,727 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,727 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,728 DEBUG java.sql.PreparedStatement - ==> Parameters: 349(Long), awj34(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,728 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,729 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,729 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,730 DEBUG java.sql.PreparedStatement - ==> Parameters: 350(Long), awj35(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,731 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,731 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,731 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,732 DEBUG java.sql.PreparedStatement - ==> Parameters: 351(Long), awj36(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,733 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,733 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,733 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,734 DEBUG java.sql.PreparedStatement - ==> Parameters: 352(Long), awj37(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,735 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,735 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,735 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,736 DEBUG java.sql.PreparedStatement - ==> Parameters: 353(Long), awj38(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,737 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,737 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,737 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,738 DEBUG java.sql.PreparedStatement - ==> Parameters: 354(Long), awj39(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,739 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,739 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,740 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,741 DEBUG java.sql.PreparedStatement - ==> Parameters: 355(Long), awj40(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,742 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,742 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,743 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,745 DEBUG java.sql.PreparedStatement - ==> Parameters: 356(Long), awj41(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,746 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,746 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,746 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,748 DEBUG java.sql.PreparedStatement - ==> Parameters: 357(Long), awj42(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,750 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,750 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,751 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,753 DEBUG java.sql.PreparedStatement - ==> Parameters: 358(Long), awj43(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,754 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,754 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,755 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,757 DEBUG java.sql.PreparedStatement - ==> Parameters: 359(Long), awj44(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,757 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,758 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,758 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,759 DEBUG java.sql.PreparedStatement - ==> Parameters: 360(Long), awj45(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,760 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,760 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,760 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,762 DEBUG java.sql.PreparedStatement - ==> Parameters: 361(Long), awj46(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,763 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,763 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,763 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,765 DEBUG java.sql.PreparedStatement - ==> Parameters: 362(Long), awj47(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,766 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,766 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,766 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,767 DEBUG java.sql.PreparedStatement - ==> Parameters: 363(Long), awj48(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,768 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,768 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,769 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,771 DEBUG java.sql.PreparedStatement - ==> Parameters: 364(Long), awj49(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,772 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,773 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,773 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,775 DEBUG java.sql.PreparedStatement - ==> Parameters: 365(Long), awj50(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,776 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,776 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,776 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,778 DEBUG java.sql.PreparedStatement - ==> Parameters: 366(Long), awj51(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,778 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,778 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,779 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,780 DEBUG java.sql.PreparedStatement - ==> Parameters: 367(Long), awj52(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,781 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,781 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,781 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,782 DEBUG java.sql.PreparedStatement - ==> Parameters: 368(Long), awj53(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,783 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,783 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,783 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,784 DEBUG java.sql.PreparedStatement - ==> Parameters: 369(Long), awj54(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,785 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,785 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,785 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,786 DEBUG java.sql.PreparedStatement - ==> Parameters: 370(Long), awj55(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,787 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,787 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,787 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,788 DEBUG java.sql.PreparedStatement - ==> Parameters: 371(Long), awj56(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,789 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,789 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,789 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,790 DEBUG java.sql.PreparedStatement - ==> Parameters: 372(Long), awj57(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,790 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,790 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,791 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,792 DEBUG java.sql.PreparedStatement - ==> Parameters: 373(Long), awj58(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,793 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,794 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,794 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,795 DEBUG java.sql.PreparedStatement - ==> Parameters: 374(Long), awj59(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,797 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,797 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,797 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,798 DEBUG java.sql.PreparedStatement - ==> Parameters: 375(Long), awj60(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,799 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,799 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,799 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,800 DEBUG java.sql.PreparedStatement - ==> Parameters: 376(Long), awj61(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,801 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,801 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,801 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,802 DEBUG java.sql.PreparedStatement - ==> Parameters: 377(Long), awj62(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,803 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,803 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,803 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,804 DEBUG java.sql.PreparedStatement - ==> Parameters: 378(Long), awj63(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,805 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,805 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,805 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,806 DEBUG java.sql.PreparedStatement - ==> Parameters: 379(Long), awj64(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,807 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,807 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,807 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,808 DEBUG java.sql.PreparedStatement - ==> Parameters: 380(Long), awj65(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,809 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,809 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,809 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,830 DEBUG java.sql.PreparedStatement - ==> Parameters: 381(Long), awj66(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,830 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,831 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,831 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,832 DEBUG java.sql.PreparedStatement - ==> Parameters: 382(Long), awj67(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,832 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,833 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,833 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,834 DEBUG java.sql.PreparedStatement - ==> Parameters: 383(Long), awj68(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,834 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,834 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,835 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,836 DEBUG java.sql.PreparedStatement - ==> Parameters: 384(Long), awj69(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,836 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,836 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,837 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,837 DEBUG java.sql.PreparedStatement - ==> Parameters: 385(Long), awj70(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,838 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,838 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,838 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,839 DEBUG java.sql.PreparedStatement - ==> Parameters: 386(Long), awj71(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,840 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,840 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,840 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,841 DEBUG java.sql.PreparedStatement - ==> Parameters: 387(Long), awj72(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,842 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,842 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,842 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,843 DEBUG java.sql.PreparedStatement - ==> Parameters: 388(Long), awj73(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,844 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,844 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,844 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,845 DEBUG java.sql.PreparedStatement - ==> Parameters: 389(Long), awj74(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,846 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,846 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,846 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,847 DEBUG java.sql.PreparedStatement - ==> Parameters: 390(Long), awj75(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,848 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,848 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,848 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,849 DEBUG java.sql.PreparedStatement - ==> Parameters: 391(Long), awj76(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,849 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,849 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,850 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,850 DEBUG java.sql.PreparedStatement - ==> Parameters: 392(Long), awj77(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,851 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,851 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,852 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,853 DEBUG java.sql.PreparedStatement - ==> Parameters: 393(Long), awj78(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,854 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,854 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,854 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,856 DEBUG java.sql.PreparedStatement - ==> Parameters: 394(Long), awj79(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,856 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,857 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,857 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,858 DEBUG java.sql.PreparedStatement - ==> Parameters: 395(Long), awj80(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,859 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,859 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,859 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,860 DEBUG java.sql.PreparedStatement - ==> Parameters: 396(Long), awj81(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,861 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,861 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,861 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,862 DEBUG java.sql.PreparedStatement - ==> Parameters: 397(Long), awj82(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,863 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,863 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,863 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,865 DEBUG java.sql.PreparedStatement - ==> Parameters: 398(Long), awj83(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,866 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,866 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,867 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,868 DEBUG java.sql.PreparedStatement - ==> Parameters: 399(Long), awj84(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,869 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,870 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,870 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,871 DEBUG java.sql.PreparedStatement - ==> Parameters: 400(Long), awj85(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,872 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,872 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,873 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,874 DEBUG java.sql.PreparedStatement - ==> Parameters: 401(Long), awj86(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,875 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,875 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,875 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,877 DEBUG java.sql.PreparedStatement - ==> Parameters: 402(Long), awj87(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,877 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,877 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,878 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,878 DEBUG java.sql.PreparedStatement - ==> Parameters: 403(Long), awj88(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,879 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,880 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,880 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,881 DEBUG java.sql.PreparedStatement - ==> Parameters: 404(Long), awj89(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,882 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,882 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,882 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,883 DEBUG java.sql.PreparedStatement - ==> Parameters: 405(Long), awj90(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,884 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,884 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,884 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,885 DEBUG java.sql.PreparedStatement - ==> Parameters: 406(Long), awj91(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,886 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,886 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,886 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,887 DEBUG java.sql.PreparedStatement - ==> Parameters: 407(Long), awj92(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,888 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,888 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,888 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,889 DEBUG java.sql.PreparedStatement - ==> Parameters: 408(Long), awj93(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,890 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,890 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,890 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,891 DEBUG java.sql.PreparedStatement - ==> Parameters: 409(Long), awj94(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,892 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,892 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,892 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,893 DEBUG java.sql.PreparedStatement - ==> Parameters: 410(Long), awj95(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,894 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,894 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,894 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,895 DEBUG java.sql.PreparedStatement - ==> Parameters: 411(Long), awj96(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,896 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,896 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,896 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,897 DEBUG java.sql.PreparedStatement - ==> Parameters: 412(Long), awj97(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,898 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,898 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,898 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,899 DEBUG java.sql.PreparedStatement - ==> Parameters: 413(Long), awj98(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,900 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,900 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,900 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,902 DEBUG java.sql.PreparedStatement - ==> Parameters: 414(Long), awj99(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,903 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,903 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,903 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,904 DEBUG java.sql.PreparedStatement - ==> Parameters: 415(Long), awj100(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,905 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,905 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,906 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,907 DEBUG java.sql.PreparedStatement - ==> Parameters: 416(Long), awj101(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,908 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,908 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,908 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,910 DEBUG java.sql.PreparedStatement - ==> Parameters: 417(Long), awj102(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,911 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,911 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,911 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,912 DEBUG java.sql.PreparedStatement - ==> Parameters: 418(Long), awj103(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,913 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,913 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,913 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,915 DEBUG java.sql.PreparedStatement - ==> Parameters: 419(Long), awj104(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,916 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,916 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,916 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,918 DEBUG java.sql.PreparedStatement - ==> Parameters: 420(Long), awj105(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,918 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,919 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,919 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,920 DEBUG java.sql.PreparedStatement - ==> Parameters: 421(Long), awj106(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,921 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,921 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,921 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,922 DEBUG java.sql.PreparedStatement - ==> Parameters: 422(Long), awj107(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,923 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,923 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,924 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,925 DEBUG java.sql.PreparedStatement - ==> Parameters: 423(Long), awj108(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,926 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,926 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,926 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,928 DEBUG java.sql.PreparedStatement - ==> Parameters: 424(Long), awj109(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,929 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,929 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,929 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,931 DEBUG java.sql.PreparedStatement - ==> Parameters: 425(Long), awj110(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,932 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,932 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,932 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,934 DEBUG java.sql.PreparedStatement - ==> Parameters: 426(Long), awj111(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,935 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,935 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,935 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,937 DEBUG java.sql.PreparedStatement - ==> Parameters: 427(Long), awj112(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,937 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,937 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,938 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,939 DEBUG java.sql.PreparedStatement - ==> Parameters: 428(Long), awj113(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,939 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,939 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,939 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,940 DEBUG java.sql.PreparedStatement - ==> Parameters: 429(Long), awj114(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,941 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,941 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,941 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,942 DEBUG java.sql.PreparedStatement - ==> Parameters: 430(Long), awj115(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,943 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,943 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,943 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,945 DEBUG java.sql.PreparedStatement - ==> Parameters: 431(Long), awj116(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,945 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,945 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,946 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,947 DEBUG java.sql.PreparedStatement - ==> Parameters: 432(Long), awj117(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,947 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,947 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,947 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,948 DEBUG java.sql.PreparedStatement - ==> Parameters: 433(Long), awj118(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,949 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,949 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,949 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,950 DEBUG java.sql.PreparedStatement - ==> Parameters: 434(Long), awj119(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,951 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,951 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,951 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,952 DEBUG java.sql.PreparedStatement - ==> Parameters: 435(Long), awj120(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,953 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,953 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,953 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,954 DEBUG java.sql.PreparedStatement - ==> Parameters: 436(Long), awj121(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,955 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,955 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,956 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,957 DEBUG java.sql.PreparedStatement - ==> Parameters: 437(Long), awj122(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,957 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,958 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,958 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,959 DEBUG java.sql.PreparedStatement - ==> Parameters: 438(Long), awj123(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,959 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,960 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,960 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,961 DEBUG java.sql.PreparedStatement - ==> Parameters: 439(Long), awj124(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,962 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,962 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,962 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,963 DEBUG java.sql.PreparedStatement - ==> Parameters: 440(Long), awj125(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,964 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,964 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,964 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,965 DEBUG java.sql.PreparedStatement - ==> Parameters: 441(Long), awj126(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,966 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,967 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,967 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,968 DEBUG java.sql.PreparedStatement - ==> Parameters: 442(Long), awj127(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,969 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,970 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,970 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,971 DEBUG java.sql.PreparedStatement - ==> Parameters: 443(Long), awj128(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,972 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,972 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,973 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,974 DEBUG java.sql.PreparedStatement - ==> Parameters: 444(Long), awj129(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,975 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,975 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,975 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,976 DEBUG java.sql.PreparedStatement - ==> Parameters: 445(Long), awj130(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,977 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,977 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,978 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,979 DEBUG java.sql.PreparedStatement - ==> Parameters: 446(Long), awj131(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,979 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,980 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,980 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,981 DEBUG java.sql.PreparedStatement - ==> Parameters: 447(Long), awj132(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,982 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,982 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,982 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,984 DEBUG java.sql.PreparedStatement - ==> Parameters: 448(Long), awj133(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,985 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,985 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,985 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,987 DEBUG java.sql.PreparedStatement - ==> Parameters: 449(Long), awj134(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,988 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,988 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,988 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,989 DEBUG java.sql.PreparedStatement - ==> Parameters: 450(Long), awj135(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,990 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,990 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,990 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,991 DEBUG java.sql.PreparedStatement - ==> Parameters: 451(Long), awj136(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,992 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,992 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,992 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,993 DEBUG java.sql.PreparedStatement - ==> Parameters: 452(Long), awj137(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,994 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,994 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,994 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,995 DEBUG java.sql.PreparedStatement - ==> Parameters: 453(Long), awj138(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,996 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,996 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,996 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:33,998 DEBUG java.sql.PreparedStatement - ==> Parameters: 454(Long), awj139(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:33,999 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:33,999 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:33,999 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,000 DEBUG java.sql.PreparedStatement - ==> Parameters: 455(Long), awj140(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,000 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,001 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,001 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,002 DEBUG java.sql.PreparedStatement - ==> Parameters: 456(Long), awj141(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,002 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,003 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,003 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,004 DEBUG java.sql.PreparedStatement - ==> Parameters: 457(Long), awj142(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,004 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,005 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,005 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,006 DEBUG java.sql.PreparedStatement - ==> Parameters: 458(Long), awj143(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,006 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,006 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,007 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,007 DEBUG java.sql.PreparedStatement - ==> Parameters: 459(Long), awj144(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,008 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,008 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,008 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,009 DEBUG java.sql.PreparedStatement - ==> Parameters: 460(Long), awj145(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,010 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,010 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,010 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,011 DEBUG java.sql.PreparedStatement - ==> Parameters: 461(Long), awj146(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,012 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,012 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,012 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,014 DEBUG java.sql.PreparedStatement - ==> Parameters: 462(Long), awj147(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,015 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,015 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,015 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,017 DEBUG java.sql.PreparedStatement - ==> Parameters: 463(Long), awj148(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,017 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,018 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,018 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,019 DEBUG java.sql.PreparedStatement - ==> Parameters: 464(Long), awj149(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,020 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,020 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,020 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,021 DEBUG java.sql.PreparedStatement - ==> Parameters: 465(Long), awj150(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,022 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,022 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,022 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,024 DEBUG java.sql.PreparedStatement - ==> Parameters: 466(Long), awj151(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,024 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,025 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,025 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,026 DEBUG java.sql.PreparedStatement - ==> Parameters: 467(Long), awj152(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,027 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,027 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,027 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,029 DEBUG java.sql.PreparedStatement - ==> Parameters: 468(Long), awj153(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,029 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,030 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,030 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,031 DEBUG java.sql.PreparedStatement - ==> Parameters: 469(Long), awj154(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,032 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,032 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,033 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,034 DEBUG java.sql.PreparedStatement - ==> Parameters: 470(Long), awj155(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,035 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,035 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,035 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,036 DEBUG java.sql.PreparedStatement - ==> Parameters: 471(Long), awj156(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,037 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,037 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,038 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,039 DEBUG java.sql.PreparedStatement - ==> Parameters: 472(Long), awj157(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,040 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,040 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,040 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,042 DEBUG java.sql.PreparedStatement - ==> Parameters: 473(Long), awj158(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,043 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,043 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,043 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,045 DEBUG java.sql.PreparedStatement - ==> Parameters: 474(Long), awj159(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,046 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,046 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,046 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,048 DEBUG java.sql.PreparedStatement - ==> Parameters: 475(Long), awj160(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,049 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,049 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,049 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,050 DEBUG java.sql.PreparedStatement - ==> Parameters: 476(Long), awj161(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,051 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,052 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,052 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,053 DEBUG java.sql.PreparedStatement - ==> Parameters: 477(Long), awj162(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,054 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,054 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,055 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,056 DEBUG java.sql.PreparedStatement - ==> Parameters: 478(Long), awj163(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,057 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,057 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,057 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,058 DEBUG java.sql.PreparedStatement - ==> Parameters: 479(Long), awj164(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,059 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,059 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,059 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,060 DEBUG java.sql.PreparedStatement - ==> Parameters: 480(Long), awj165(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,061 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,061 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,061 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,063 DEBUG java.sql.PreparedStatement - ==> Parameters: 481(Long), awj166(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,064 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,064 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,064 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,066 DEBUG java.sql.PreparedStatement - ==> Parameters: 482(Long), awj167(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,066 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,067 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,067 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,068 DEBUG java.sql.PreparedStatement - ==> Parameters: 483(Long), awj168(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,068 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,069 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,069 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,070 DEBUG java.sql.PreparedStatement - ==> Parameters: 484(Long), awj169(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,071 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,071 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,071 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,072 DEBUG java.sql.PreparedStatement - ==> Parameters: 485(Long), awj170(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,072 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,073 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,073 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,074 DEBUG java.sql.PreparedStatement - ==> Parameters: 486(Long), awj171(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,101 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,101 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,101 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,102 DEBUG java.sql.PreparedStatement - ==> Parameters: 487(Long), awj172(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,103 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,103 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,103 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,104 DEBUG java.sql.PreparedStatement - ==> Parameters: 488(Long), awj173(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,105 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,105 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,105 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,106 DEBUG java.sql.PreparedStatement - ==> Parameters: 489(Long), awj174(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,107 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,107 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,107 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,108 DEBUG java.sql.PreparedStatement - ==> Parameters: 490(Long), awj175(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,109 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,109 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,109 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,110 DEBUG java.sql.PreparedStatement - ==> Parameters: 491(Long), awj176(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,111 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,111 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,111 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,112 DEBUG java.sql.PreparedStatement - ==> Parameters: 492(Long), awj177(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,113 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,113 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,114 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,115 DEBUG java.sql.PreparedStatement - ==> Parameters: 493(Long), awj178(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,116 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,117 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,117 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,118 DEBUG java.sql.PreparedStatement - ==> Parameters: 494(Long), awj179(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,120 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,120 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,120 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,121 DEBUG java.sql.PreparedStatement - ==> Parameters: 495(Long), awj180(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,122 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,122 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,122 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,123 DEBUG java.sql.PreparedStatement - ==> Parameters: 496(Long), awj181(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,123 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,124 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,124 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,125 DEBUG java.sql.PreparedStatement - ==> Parameters: 497(Long), awj182(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,125 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,125 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,126 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,127 DEBUG java.sql.PreparedStatement - ==> Parameters: 498(Long), awj183(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,127 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,128 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,128 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,129 DEBUG java.sql.PreparedStatement - ==> Parameters: 499(Long), awj184(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,130 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,130 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,130 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,132 DEBUG java.sql.PreparedStatement - ==> Parameters: 500(Long), awj185(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,133 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,133 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,133 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,134 DEBUG java.sql.PreparedStatement - ==> Parameters: 501(Long), awj186(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,135 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,135 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,135 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,136 DEBUG java.sql.PreparedStatement - ==> Parameters: 502(Long), awj187(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,137 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,137 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,137 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,138 DEBUG java.sql.PreparedStatement - ==> Parameters: 503(Long), awj188(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,139 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,139 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,139 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,141 DEBUG java.sql.PreparedStatement - ==> Parameters: 504(Long), awj189(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,141 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,142 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,142 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,143 DEBUG java.sql.PreparedStatement - ==> Parameters: 505(Long), awj190(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,144 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,144 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,144 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,145 DEBUG java.sql.PreparedStatement - ==> Parameters: 506(Long), awj191(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,146 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,146 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,146 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,148 DEBUG java.sql.PreparedStatement - ==> Parameters: 507(Long), awj192(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,149 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,149 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,149 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,150 DEBUG java.sql.PreparedStatement - ==> Parameters: 508(Long), awj193(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,151 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,151 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,152 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,153 DEBUG java.sql.PreparedStatement - ==> Parameters: 509(Long), awj194(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,153 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,153 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,154 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,155 DEBUG java.sql.PreparedStatement - ==> Parameters: 510(Long), awj195(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,155 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,155 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,155 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,156 DEBUG java.sql.PreparedStatement - ==> Parameters: 511(Long), awj196(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,157 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,158 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,158 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,160 DEBUG java.sql.PreparedStatement - ==> Parameters: 512(Long), awj197(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,161 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,161 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,161 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,162 DEBUG java.sql.PreparedStatement - ==> Parameters: 513(Long), awj198(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,163 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,163 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,163 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,164 DEBUG java.sql.PreparedStatement - ==> Parameters: 514(Long), awj199(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,165 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,165 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,165 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,166 DEBUG java.sql.PreparedStatement - ==> Parameters: 515(Long), awj200(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,167 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,167 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,167 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,168 DEBUG java.sql.PreparedStatement - ==> Parameters: 516(Long), awj201(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,168 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,168 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,169 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,170 DEBUG java.sql.PreparedStatement - ==> Parameters: 517(Long), awj202(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,170 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,170 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,171 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,172 DEBUG java.sql.PreparedStatement - ==> Parameters: 518(Long), awj203(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,172 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,173 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,173 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,174 DEBUG java.sql.PreparedStatement - ==> Parameters: 519(Long), awj204(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,174 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,174 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,175 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,176 DEBUG java.sql.PreparedStatement - ==> Parameters: 520(Long), awj205(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,176 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,176 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,176 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,178 DEBUG java.sql.PreparedStatement - ==> Parameters: 521(Long), awj206(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,178 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,178 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,179 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,180 DEBUG java.sql.PreparedStatement - ==> Parameters: 522(Long), awj207(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,181 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,181 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,181 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,182 DEBUG java.sql.PreparedStatement - ==> Parameters: 523(Long), awj208(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,183 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,184 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,184 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,185 DEBUG java.sql.PreparedStatement - ==> Parameters: 524(Long), awj209(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,186 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,186 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,186 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,187 DEBUG java.sql.PreparedStatement - ==> Parameters: 525(Long), awj210(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,188 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,188 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,189 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,190 DEBUG java.sql.PreparedStatement - ==> Parameters: 526(Long), awj211(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,191 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,192 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,192 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,193 DEBUG java.sql.PreparedStatement - ==> Parameters: 527(Long), awj212(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,194 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,194 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,195 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,196 DEBUG java.sql.PreparedStatement - ==> Parameters: 528(Long), awj213(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,204 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,204 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,204 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,206 DEBUG java.sql.PreparedStatement - ==> Parameters: 529(Long), awj214(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,206 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,207 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,207 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,208 DEBUG java.sql.PreparedStatement - ==> Parameters: 530(Long), awj215(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,208 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,209 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,209 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,210 DEBUG java.sql.PreparedStatement - ==> Parameters: 531(Long), awj216(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,211 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,211 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,211 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,212 DEBUG java.sql.PreparedStatement - ==> Parameters: 532(Long), awj217(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,212 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,212 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,213 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,214 DEBUG java.sql.PreparedStatement - ==> Parameters: 533(Long), awj218(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,214 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,214 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,215 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,216 DEBUG java.sql.PreparedStatement - ==> Parameters: 534(Long), awj219(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,216 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,217 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,217 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,218 DEBUG java.sql.PreparedStatement - ==> Parameters: 535(Long), awj220(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,219 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,220 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,220 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,221 DEBUG java.sql.PreparedStatement - ==> Parameters: 536(Long), awj221(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,222 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,222 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,222 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,224 DEBUG java.sql.PreparedStatement - ==> Parameters: 537(Long), awj222(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,225 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,225 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,225 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,226 DEBUG java.sql.PreparedStatement - ==> Parameters: 538(Long), awj223(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,227 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,227 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,228 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,229 DEBUG java.sql.PreparedStatement - ==> Parameters: 539(Long), awj224(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,230 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,230 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,230 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,232 DEBUG java.sql.PreparedStatement - ==> Parameters: 540(Long), awj225(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,234 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,235 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,235 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,237 DEBUG java.sql.PreparedStatement - ==> Parameters: 541(Long), awj226(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,239 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,239 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,240 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,241 DEBUG java.sql.PreparedStatement - ==> Parameters: 542(Long), awj227(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,243 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,243 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,243 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,245 DEBUG java.sql.PreparedStatement - ==> Parameters: 543(Long), awj228(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,246 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,246 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,247 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,248 DEBUG java.sql.PreparedStatement - ==> Parameters: 544(Long), awj229(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,250 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,250 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,250 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,252 DEBUG java.sql.PreparedStatement - ==> Parameters: 545(Long), awj230(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,253 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,253 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,254 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,272 DEBUG java.sql.PreparedStatement - ==> Parameters: 546(Long), awj231(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,273 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,273 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,273 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,275 DEBUG java.sql.PreparedStatement - ==> Parameters: 547(Long), awj232(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,276 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,276 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,276 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,277 DEBUG java.sql.PreparedStatement - ==> Parameters: 548(Long), awj233(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,278 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,278 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,278 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,280 DEBUG java.sql.PreparedStatement - ==> Parameters: 549(Long), awj234(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,281 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,281 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,281 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,282 DEBUG java.sql.PreparedStatement - ==> Parameters: 550(Long), awj235(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,283 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,283 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,283 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,284 DEBUG java.sql.PreparedStatement - ==> Parameters: 551(Long), awj236(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,285 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,285 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,285 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,286 DEBUG java.sql.PreparedStatement - ==> Parameters: 552(Long), awj237(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,287 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,287 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,287 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,289 DEBUG java.sql.PreparedStatement - ==> Parameters: 553(Long), awj238(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,290 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,290 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,290 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,291 DEBUG java.sql.PreparedStatement - ==> Parameters: 554(Long), awj239(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,292 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,292 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,293 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,294 DEBUG java.sql.PreparedStatement - ==> Parameters: 555(Long), awj240(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,295 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,295 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,296 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,297 DEBUG java.sql.PreparedStatement - ==> Parameters: 556(Long), awj241(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,298 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,298 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,298 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,299 DEBUG java.sql.PreparedStatement - ==> Parameters: 557(Long), awj242(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,300 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,300 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,300 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,301 DEBUG java.sql.PreparedStatement - ==> Parameters: 558(Long), awj243(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,302 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,302 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,302 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,303 DEBUG java.sql.PreparedStatement - ==> Parameters: 559(Long), awj244(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,304 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,304 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,304 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,305 DEBUG java.sql.PreparedStatement - ==> Parameters: 560(Long), awj245(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,305 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,305 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,305 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,307 DEBUG java.sql.PreparedStatement - ==> Parameters: 561(Long), awj246(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,307 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,307 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,308 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,308 DEBUG java.sql.PreparedStatement - ==> Parameters: 562(Long), awj247(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,309 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,309 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,310 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,311 DEBUG java.sql.PreparedStatement - ==> Parameters: 563(Long), awj248(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,311 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,311 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,312 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,312 DEBUG java.sql.PreparedStatement - ==> Parameters: 564(Long), awj249(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,313 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,313 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,313 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,314 DEBUG java.sql.PreparedStatement - ==> Parameters: 565(Long), awj250(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,314 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,315 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,315 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,316 DEBUG java.sql.PreparedStatement - ==> Parameters: 566(Long), awj251(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,317 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,317 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,317 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,318 DEBUG java.sql.PreparedStatement - ==> Parameters: 567(Long), awj252(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,319 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,319 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,319 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,320 DEBUG java.sql.PreparedStatement - ==> Parameters: 568(Long), awj253(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,321 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,321 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,321 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,322 DEBUG java.sql.PreparedStatement - ==> Parameters: 569(Long), awj254(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,323 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,323 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,323 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,325 DEBUG java.sql.PreparedStatement - ==> Parameters: 570(Long), awj255(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,326 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,326 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,326 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,327 DEBUG java.sql.PreparedStatement - ==> Parameters: 571(Long), awj256(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,328 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,328 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,329 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,330 DEBUG java.sql.PreparedStatement - ==> Parameters: 572(Long), awj257(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,331 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,331 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,331 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,332 DEBUG java.sql.PreparedStatement - ==> Parameters: 573(Long), awj258(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,333 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,333 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,333 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,334 DEBUG java.sql.PreparedStatement - ==> Parameters: 574(Long), awj259(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,335 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,335 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,335 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,336 DEBUG java.sql.PreparedStatement - ==> Parameters: 575(Long), awj260(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,336 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,336 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,337 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,337 DEBUG java.sql.PreparedStatement - ==> Parameters: 576(Long), awj261(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,338 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,339 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,339 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,340 DEBUG java.sql.PreparedStatement - ==> Parameters: 577(Long), awj262(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,341 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,341 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,341 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,342 DEBUG java.sql.PreparedStatement - ==> Parameters: 578(Long), awj263(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,343 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,343 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,343 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,344 DEBUG java.sql.PreparedStatement - ==> Parameters: 579(Long), awj264(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,345 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,345 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,345 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,346 DEBUG java.sql.PreparedStatement - ==> Parameters: 580(Long), awj265(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,347 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,347 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,347 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,348 DEBUG java.sql.PreparedStatement - ==> Parameters: 581(Long), awj266(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,349 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,349 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,349 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,350 DEBUG java.sql.PreparedStatement - ==> Parameters: 582(Long), awj267(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,351 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,351 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,351 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,352 DEBUG java.sql.PreparedStatement - ==> Parameters: 583(Long), awj268(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,352 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,353 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,353 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,354 DEBUG java.sql.PreparedStatement - ==> Parameters: 584(Long), awj269(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,354 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,354 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,354 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,355 DEBUG java.sql.PreparedStatement - ==> Parameters: 585(Long), awj270(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,356 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,356 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,356 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,357 DEBUG java.sql.PreparedStatement - ==> Parameters: 586(Long), awj271(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,358 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,358 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,358 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,359 DEBUG java.sql.PreparedStatement - ==> Parameters: 587(Long), awj272(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,359 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,360 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,360 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,361 DEBUG java.sql.PreparedStatement - ==> Parameters: 588(Long), awj273(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,361 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,362 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,362 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,363 DEBUG java.sql.PreparedStatement - ==> Parameters: 589(Long), awj274(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,363 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,363 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,363 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,364 DEBUG java.sql.PreparedStatement - ==> Parameters: 590(Long), awj275(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,365 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,365 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,365 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,366 DEBUG java.sql.PreparedStatement - ==> Parameters: 591(Long), awj276(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,367 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,367 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,367 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,368 DEBUG java.sql.PreparedStatement - ==> Parameters: 592(Long), awj277(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,369 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,369 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,369 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,370 DEBUG java.sql.PreparedStatement - ==> Parameters: 593(Long), awj278(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,371 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,371 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,371 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,372 DEBUG java.sql.PreparedStatement - ==> Parameters: 594(Long), awj279(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,372 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,372 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,372 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,373 DEBUG java.sql.PreparedStatement - ==> Parameters: 595(Long), awj280(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,374 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,374 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,374 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,375 DEBUG java.sql.PreparedStatement - ==> Parameters: 596(Long), awj281(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,376 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,376 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,376 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,377 DEBUG java.sql.PreparedStatement - ==> Parameters: 597(Long), awj282(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,377 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,377 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,378 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,378 DEBUG java.sql.PreparedStatement - ==> Parameters: 598(Long), awj283(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,379 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,379 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,379 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,380 DEBUG java.sql.PreparedStatement - ==> Parameters: 599(Long), awj284(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,381 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,381 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,381 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,382 DEBUG java.sql.PreparedStatement - ==> Parameters: 600(Long), awj285(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,383 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,383 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,383 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,384 DEBUG java.sql.PreparedStatement - ==> Parameters: 601(Long), awj286(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,385 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,385 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,385 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,387 DEBUG java.sql.PreparedStatement - ==> Parameters: 602(Long), awj287(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,388 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,388 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,388 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,390 DEBUG java.sql.PreparedStatement - ==> Parameters: 603(Long), awj288(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,391 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,391 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,391 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,392 DEBUG java.sql.PreparedStatement - ==> Parameters: 604(Long), awj289(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,393 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,393 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,393 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,394 DEBUG java.sql.PreparedStatement - ==> Parameters: 605(Long), awj290(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,395 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,395 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,395 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,397 DEBUG java.sql.PreparedStatement - ==> Parameters: 606(Long), awj291(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,398 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,398 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,398 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,399 DEBUG java.sql.PreparedStatement - ==> Parameters: 607(Long), awj292(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,400 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,400 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,400 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,402 DEBUG java.sql.PreparedStatement - ==> Parameters: 608(Long), awj293(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,402 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,402 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,403 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,403 DEBUG java.sql.PreparedStatement - ==> Parameters: 609(Long), awj294(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,404 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,404 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,404 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,406 DEBUG java.sql.PreparedStatement - ==> Parameters: 610(Long), awj295(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,406 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,407 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,407 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,408 DEBUG java.sql.PreparedStatement - ==> Parameters: 611(Long), awj296(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,409 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,409 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,409 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,410 DEBUG java.sql.PreparedStatement - ==> Parameters: 612(Long), awj297(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,411 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,411 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,411 DEBUG java.sql.PreparedStatement - ==> Parameters: 
+9월 16 2017 19:32:34,413 DEBUG java.sql.PreparedStatement - ==> Parameters: 613(Long), awj298(String), p@ssw@rd(String), (String), (String), true(Boolean), (String)
+9월 16 2017 19:32:34,413 DEBUG java.sql.Connection - ooo Using Connection [oracle.jdbc.driver.T4CConnection@235a75e3]
+9월 16 2017 19:32:34,414 DEBUG java.sql.Connection - ==>  Preparing: SELECT SEQ_WES_USER.NEXTVAL AS ID FROM DUAL 
+9월 16 2017 19:32:34,414 DEBUG java.sql.PreparedStatement - ==> Parameters: 
